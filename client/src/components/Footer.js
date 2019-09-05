@@ -53,7 +53,12 @@ function OnlineStatus() {
 }
 
 function Version() {
-  return <Flex>v{packageJSON.version}</Flex>;
+  function update() {
+    if (window.sw) {
+      window.sw.update();
+    }
+  }
+  return <Flex onClick={update}>v{packageJSON.version}</Flex>;
 }
 
 function BabyId() {
