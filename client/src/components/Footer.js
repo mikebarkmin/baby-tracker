@@ -18,7 +18,7 @@ const Root = styled.footer`
   left: 0;
   bottom: 0px;
   height: 30px;
-  right: 10px;
+  right: 0px;
   background-color: ${props => lighten(0.5, props.theme.secondary)};
   align-items: center;
   font-size: 0.8rem;
