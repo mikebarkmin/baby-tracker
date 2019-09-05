@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import useSocket from '../hooks/useSocket';
 import EventList from '../components/EventList';
 
-function sortEvents(events) {
+export function sortEvents(events) {
   const newEvents = [...events];
   newEvents.sort((a, b) => a.date < b.date);
   return newEvents;

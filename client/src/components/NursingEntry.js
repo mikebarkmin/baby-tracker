@@ -15,6 +15,8 @@ import NursingForm from './NursingForm';
 import nursingIcon from '../icons/nursing.svg';
 import { positions } from '../pages/NursingPage';
 
+console.log(positions);
+
 const Type = styled.span`
   font-weight: bold;
   margin-right: 4px;
@@ -39,6 +41,9 @@ function NursingEntry({
     onUpdate(values);
   }
 
+  const position = positions.find(p => p.id === breastPosition) || {};
+  const name = position.name || '?';
+
   return (
     <>
       <EventEntry>
@@ -46,8 +51,7 @@ function NursingEntry({
         <EventContent>
           <EventDetails>
             <Type>
-              {positions.find(p => p.id === breastPosition).name}{' '}
-              {breastLeft ? '(Links)' : '(Rechts)'} für{' '}
+              {name} {breastLeft ? '(Links)' : '(Rechts)'} für{' '}
               {formatDistanceStrict(new Date(end), new Date(date), {
                 unit: 'minute',
                 locale: de

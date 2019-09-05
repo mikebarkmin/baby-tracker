@@ -13,6 +13,7 @@ import diaperIcon from '../icons/diaper.svg';
 import nursingIcon from '../icons/nursing.svg';
 import foodIcon from '../icons/food.svg';
 import sleepIcon from '../icons/sleep.svg';
+import { sortEvents } from './EventsPage';
 
 const Root = styled.div`
   display: flex;
@@ -74,7 +75,7 @@ function DashboardPage() {
   const sleepSummary = useSummary('sleep', start, end);
   const router = useRouter();
 
-  const events = [];
+  let events = [];
   diaperSummary.events.forEach(e => {
     e._type = 'diaper';
     events.push(e);
@@ -95,6 +96,7 @@ function DashboardPage() {
   function to(path) {
     router.history.push(path);
   }
+  events = sortEvents(events);
 
   return (
     <Root>
