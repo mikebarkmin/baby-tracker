@@ -24,10 +24,8 @@ const BreastButton = styled.button`
 `;
 
 const BreastPositionButton = styled.button`
-  display: inline-flex;
-  flex-direction: column;
+  position: relative;
   background-image: url(${props => props.src});
-  justify-content: end;
   padding: 4px;
   background-repeat: no-repeat;
   background-size: contain;
@@ -38,6 +36,7 @@ const BreastPositionButton = styled.button`
   border: 2px solid lightgrey;
   border-radius: 4px;
   background-color: white;
+  padding-top: 80px;
 
   background-color: ${props => (props.active ? props.theme.primary : null)};
 `;
@@ -104,7 +103,7 @@ function NursingForm({ onSubmit, submitLabel, header, initalValues }) {
                   active={breastPosition === p.id}
                   type="button"
                 >
-                  {p.name}
+                  <span>{p.name}</span>
                 </BreastPositionButton>
               ))}
               <BreastPositionButton

@@ -5,7 +5,7 @@ import EventList from '../components/EventList';
 
 export function sortEvents(events) {
   const newEvents = [...events];
-  newEvents.sort((a, b) => a.date < b.date);
+  newEvents.sort((a, b) => new Date(b.date) - new Date(a.date));
   return newEvents;
 }
 
