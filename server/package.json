@@ -1,0 +1,32 @@
+{
+  "name": "baby-tracker",
+  "version": "0.1.0",
+  "main": "server.js",
+  "author": "Mike Barkmin",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "DEBUG=socket.io* nodemon --exec babel-node src/server.js localhost 8080",
+    "build": "babel src --out-dir build"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.11",
+    "shortid": "^2.2.14",
+    "socket.io": "^2.2.0",
+    "validator": "^11.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-eslint": "^10.0.3",
+    "babel-plugin-transform-node-env-inline": "^0.4.3",
+    "eslint": "^6.3.0",
+    "nodemon": "^1.19.1"
+  }
+}
