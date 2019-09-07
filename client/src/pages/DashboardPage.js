@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import styled from 'styled-components';
 import Summary from '../components/Summary';
 import { DatePicker } from '../components/Form';
 import useSocket from '../hooks/useSocket';
 import useRouter from '../hooks/useRouter';
-import EventList from '../components/EventList';
 import FoodEntry from '../components/FoodEntry';
 import NursingEntry from '../components/NursingEntry';
 import SleepEntry from '../components/SleepEntry';
@@ -14,33 +12,7 @@ import nursingIcon from '../icons/nursing.svg';
 import foodIcon from '../icons/food.svg';
 import sleepIcon from '../icons/sleep.svg';
 import { sortEvents } from './EventsPage';
-
-const Root = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
-const DateButtonStyled = styled.button`
-  border: none;
-  background: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-`;
-
-class DateButton extends React.Component {
-  render() {
-    const { value, onClick } = this.props;
-    return <DateButtonStyled onClick={onClick}>{value}</DateButtonStyled>;
-  }
-}
-
-const Summaries = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 40px 0;
-`;
+import Flex from '../components/Flex';
 
 const useSummary = (socketPrefix, start, end) => {
   const [summary, setSummary] = useState({
@@ -99,7 +71,7 @@ function DashboardPage() {
   events = sortEvents(events);
 
   return (
-    <Root>
+    <Flex direction="column" alignItems="center" spacing={10}>
       <DatePicker
         withPortal
         selected={start}
@@ -111,12 +83,11 @@ function DashboardPage() {
           setStart(start);
           setEnd(end);
         }}
-        customInput={<DateButton />}
         todayButton="Heute"
         maxDate={new Date()}
         dateFormat="dd.MM.yyyy"
       />
-      <Summaries>
+      <Flex direction="column" alignItems="center">
         <Summary
           name="Windel"
           onClick={() => to('/diaper')}
@@ -141,8 +112,8 @@ function DashboardPage() {
           icon={foodIcon}
           summary={foodSummary}
         />
-      </Summaries>
-      <EventList>
+      </Flex>
+      <Flex direction="column" justifyContent="center" spacing={2}>
         {events.map(e => {
           switch (e._type) {
             case 'diaper':
@@ -157,8 +128,8 @@ function DashboardPage() {
               return null;
           }
         })}
-      </EventList>
-    </Root>
+      </Flex>
+    </Flex>
   );
 }
 

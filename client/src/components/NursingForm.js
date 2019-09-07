@@ -1,17 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import {
-  Form,
   FormElement,
-  FormHeader,
   FormContent,
-  FormSubmit,
   Label,
   Toggle,
   IconToggle,
   DatePicker
 } from './Form';
+import Flex from './Flex';
 import unknownIcon from '../icons/unknown.svg';
 import { positions } from '../pages/NursingPage';
 
@@ -49,26 +47,28 @@ function NursingForm({ onChange, values }) {
     <FormContent>
       <FormElement>
         <Label>Seite</Label>
-        <Toggle
-          onClick={() => setBreastLeft(true)}
-          active={breastLeft}
-          type="button"
-        >
-          Links
-        </Toggle>
-        <Toggle
-          onClick={() => setBreastLeft(false)}
-          active={!breastLeft}
-          type="button"
-        >
-          Rechts
-        </Toggle>
+        <Flex wrap="wrap" justifyContent="flex-end" spacing={5}>
+          <Toggle
+            onClick={() => setBreastLeft(true)}
+            active={breastLeft}
+            type="button"
+          >
+            Links
+          </Toggle>
+          <Toggle
+            onClick={() => setBreastLeft(false)}
+            active={!breastLeft}
+            type="button"
+          >
+            Rechts
+          </Toggle>
+        </Flex>
       </FormElement>
       <FormElement>
         <Label>Position</Label>
-        <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <Flex direction="column">
           <PositionName>{name}</PositionName>
-          <div>
+          <Flex wrap="wrap" justifyContent="flex-end" spacing={5}>
             {positions.map(p => (
               <IconToggle
                 key={p.id}
@@ -84,8 +84,8 @@ function NursingForm({ onChange, values }) {
               active={breastPosition === null}
               type="button"
             />
-          </div>
-        </div>
+          </Flex>
+        </Flex>
       </FormElement>
       <FormElement>
         <Label>Start</Label>

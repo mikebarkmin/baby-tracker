@@ -16,8 +16,6 @@ import EventInlineForm from './EventInlineForm';
 import nursingIcon from '../icons/nursing.svg';
 import { positions } from '../pages/NursingPage';
 
-console.log(positions);
-
 const Type = styled.span`
   font-weight: bold;
   margin-right: 4px;

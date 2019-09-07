@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import RDatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { darken } from 'polished';
+import Flex from './Flex';
 
 export const Form = styled.form`
   display: flex;
@@ -75,7 +76,6 @@ export const Toggle = styled.button`
   text-transform: uppercase;
   font-weight: bold;
   color: grey;
-  margin-left: 10px;
   border-radius: 4px;
   background-color: white;
 
@@ -108,7 +108,7 @@ class CustomInput extends React.Component {
 
 export const DatePicker = ({ onChange, ...props }) => {
   return (
-    <div style={{ display: 'flex' }}>
+    <Flex wrap="wrap" justifyContent="flex-end" spacing={5}>
       <Toggle
         onClick={() => {
           onChange(new Date());
@@ -122,7 +122,7 @@ export const DatePicker = ({ onChange, ...props }) => {
         onChange={onChange}
         customInput={<CustomInput />}
       />
-    </div>
+    </Flex>
   );
 };
 

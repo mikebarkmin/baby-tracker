@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { formatDistanceToNow } from 'date-fns';
 import { de } from 'date-fns/locale';
+import Flex from './Flex';
 
 const Container = styled.div`
   display: flex;
@@ -29,12 +30,6 @@ const Header = styled.h2`
   align-items: center;
 `;
 
-const Info = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
 const Last = styled.div`
   font-size: 0.8rem;
 `;
@@ -47,14 +42,14 @@ function Summary({ name, icon, color, summary, onClick }) {
         <HeaderIcon src={icon} />
         {name}
       </Header>
-      <Info>
+      <Flex justifyContent="center" alignItems="center">
         {summary.last && (
           <Last>
             Zuletzt vor{' '}
             {formatDistanceToNow(new Date(summary.last.date), { locale: de })}
           </Last>
         )}
-      </Info>
+      </Flex>
     </Container>
   );
 }

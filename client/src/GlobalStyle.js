@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-import { lighten } from 'polished';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -173,8 +172,8 @@ const GlobalStyle = createGlobalStyle`
     position: absolute;
     top: 51px;
     width: 100%;
-    border: 1px solid #aaa;
-    background-color: #fff;
+    border: 2px solid lightgrey;
+    background-color: whitesmoke;
     font-weight: 300;
     font-size: 16px;
     border-bottom-left-radius: 4px;

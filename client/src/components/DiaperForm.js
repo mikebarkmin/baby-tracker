@@ -8,6 +8,7 @@ import {
   DatePicker,
   IconToggle
 } from './Form';
+import Flex from './Flex';
 import { colors } from '../pages/DiaperPage';
 
 import peeIcon from '../icons/pee.svg';
@@ -60,37 +61,41 @@ function DiaperForm({ onChange, values }) {
     <FormContent>
       <FormElement>
         <Label>Art</Label>
-        <IconToggle
-          onClick={togglePee}
-          src={peeIcon}
-          active={pee}
-          type="button"
-        />
-        <IconToggle
-          onClick={togglePoop}
-          src={poopIcon}
-          active={poop}
-          type="button"
-        />
+        <Flex wrap="wrap" justifyContent="flex-end" spacing={5}>
+          <IconToggle
+            onClick={togglePee}
+            src={peeIcon}
+            active={pee}
+            type="button"
+          />
+          <IconToggle
+            onClick={togglePoop}
+            src={poopIcon}
+            active={poop}
+            type="button"
+          />
+        </Flex>
       </FormElement>
       {poop && (
         <FormElement>
           <Label>Kacka Farbe</Label>
-          {Object.keys(colors).map(color => (
-            <PoopColorToggle
-              key={color}
-              color={colors[color]}
-              active={poopColor === Number(color)}
-              onClick={e => handlePoopColor(e, Number(color))}
+          <Flex wrap="wrap" justifyContent="flex-end" spacing={5}>
+            {Object.keys(colors).map(color => (
+              <PoopColorToggle
+                key={color}
+                color={colors[color]}
+                active={poopColor === Number(color)}
+                onClick={e => handlePoopColor(e, Number(color))}
+                type="button"
+              />
+            ))}
+            <IconToggle
+              active={poopColor == null}
+              src={unknownIcon}
+              onClick={e => handlePoopColor(e, null)}
               type="button"
             />
-          ))}
-          <IconToggle
-            active={poopColor == null}
-            src={unknownIcon}
-            onClick={e => handlePoopColor(e, null)}
-            type="button"
-          />
+          </Flex>
         </FormElement>
       )}
       <FormElement>
