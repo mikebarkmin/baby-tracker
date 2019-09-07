@@ -9,6 +9,7 @@ import {
   EventDelete,
   EventDetails
 } from './EventEntry';
+import EventInlineForm from './EventInlineForm';
 import DiaperForm from './DiaperForm';
 import { colors } from '../pages/DiaperPage';
 import diaperIcon from '../icons/diaper.svg';
@@ -62,11 +63,15 @@ function DiaperEntry({ date, pee, poop, poopColor, onDelete, onUpdate }) {
         {onDelete && <EventDelete onClick={onDelete} />}
       </EventEntry>
       {edit && (
-        <DiaperForm
-          header="Bearbeiten"
-          submitLabel="Speichern"
+        <EventInlineForm
           onSubmit={handleUpdate}
-          initalValues={{ pee, poop, poopColor, date: new Date(date) }}
+          FormContent={DiaperForm}
+          initalValues={{
+            date: new Date(date),
+            pee,
+            poop,
+            poopColor
+          }}
         />
       )}
     </>
@@ -76,4 +81,3 @@ function DiaperEntry({ date, pee, poop, poopColor, onDelete, onUpdate }) {
 DiaperEntry.propTypes = {};
 
 export default DiaperEntry;
-

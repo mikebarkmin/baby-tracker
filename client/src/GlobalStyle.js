@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { lighten } from 'polished';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -152,19 +153,6 @@ const GlobalStyle = createGlobalStyle`
 
   .react-autosuggest__container {
     position: relative;
-    width: 100%;
-    flex: 4;
-  }
-
-  .react-autosuggest__input {
-    flex: 4;
-    border-radius: 4px;
-    padding: 0 25px;
-    height: 55px;
-    outline: none;
-    border: 1px solid lightgrey;
-    width: 100%;
-    line-height: 1.2;
   }
 
   .react-autosuggest__input--focused {

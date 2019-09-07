@@ -75,11 +75,16 @@ const Root = styled.div`
   left: 0;
   right: 0;
   overflow-y: auto;
+
+  @media (max-width: ${props => props.theme.mobileWidth}px) {
+    top: 52px;
+  }
 `;
 
 const Main = styled.main`
+  position: relative;
   display: block;
-  padding: 12px 24px;
+  padding: 24px;
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
@@ -96,8 +101,8 @@ function App() {
             {baby !== null ? (
               <>
                 <BabyJoin />
+                <Navigation links={links} />
                 <Main>
-                  <Navigation links={links} />
                   <Switch>
                     <Route exact path="/" component={DashboardPage} />
                     <Route exact path="/nursing" component={NursingPage} />

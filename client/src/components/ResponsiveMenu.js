@@ -25,7 +25,7 @@ const LargeMenu = styled.nav`
   display: block;
   text-align: center;
   background: ${props => props.theme.secondary};
-  min-height: 80px;
+  height: 80px;
 
   transition: all 0.5s ease-in-out;
 `;

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import Summary from '../components/Summary';
-import { InputDatetime } from '../components/Form';
+import { DatePicker } from '../components/Form';
 import useSocket from '../hooks/useSocket';
 import useRouter from '../hooks/useRouter';
 import EventList from '../components/EventList';
@@ -100,7 +100,7 @@ function DashboardPage() {
 
   return (
     <Root>
-      <InputDatetime
+      <DatePicker
         withPortal
         selected={start}
         onChange={date => {

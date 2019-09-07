@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import useSocket from '../hooks/useSocket';
 import EventList from '../components/EventList';
+import EventForm from '../components/EventForm';
 
 export function sortEvents(events) {
   const newEvents = [...events];
@@ -11,6 +12,7 @@ export function sortEvents(events) {
 
 function EventsPage({ FormComponent, EntryComponent, socketPrefix }) {
   const [events, setEvents] = useState([]);
+  const [add, setAdd] = useState(false);
 
   const socket = useSocket();
   useEffect(() => {
@@ -38,6 +40,7 @@ function EventsPage({ FormComponent, EntryComponent, socketPrefix }) {
     socket.emit(`${socketPrefix}/create`, event, d => {
       const newEvents = [d.event, ...events];
       setEvents(sortEvents(newEvents));
+      setAdd(false);
     });
   }
 
@@ -58,7 +61,9 @@ function EventsPage({ FormComponent, EntryComponent, socketPrefix }) {
   }
 
   return (
-    <div>
+    <>
+      <EventForm onSubmit={handleCreate} FormContent={FormComponent} />
+      <br />
       <EventList>
         {events.map(e => (
           <EntryComponent
@@ -69,8 +74,7 @@ function EventsPage({ FormComponent, EntryComponent, socketPrefix }) {
           />
         ))}
       </EventList>
-      <FormComponent onSubmit={handleCreate} />
-    </div>
+    </>
   );
 }
 

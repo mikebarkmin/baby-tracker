@@ -9,6 +9,7 @@ import {
   EventDelete,
   EventDetails
 } from './EventEntry';
+import EventInlineForm from './EventInlineForm';
 import FoodForm from './FoodForm';
 import foodIcon from '../icons/food.svg';
 
@@ -45,10 +46,9 @@ function FoodEntry({ type, amount, date, onDelete, onUpdate }) {
         {onDelete && <EventDelete onClick={onDelete} />}
       </EventEntry>
       {edit && (
-        <FoodForm
-          header="Bearbeiten"
-          submitLabel="Speichern"
+        <EventInlineForm
           onSubmit={handleUpdate}
+          FormContent={FoodForm}
           initalValues={{ type, amount, date: new Date(date) }}
         />
       )}

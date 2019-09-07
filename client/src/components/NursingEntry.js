@@ -12,6 +12,7 @@ import {
   EventDetails
 } from './EventEntry';
 import NursingForm from './NursingForm';
+import EventInlineForm from './EventInlineForm';
 import nursingIcon from '../icons/nursing.svg';
 import { positions } from '../pages/NursingPage';
 
@@ -64,10 +65,9 @@ function NursingEntry({
         {onDelete && <EventDelete onClick={onDelete} />}
       </EventEntry>
       {edit && (
-        <NursingForm
-          header="Bearbeiten"
-          submitLabel="Speichern"
+        <EventInlineForm
           onSubmit={handleUpdate}
+          FormContent={NursingForm}
           initalValues={{
             end: new Date(end),
             breastLeft,

@@ -1,5 +1,6 @@
+import React from 'react';
 import styled from 'styled-components';
-import DatePicker from 'react-datepicker';
+import RDatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { darken } from 'polished';
 
@@ -13,7 +14,6 @@ export const Form = styled.form`
 
 export const FormElement = styled.div`
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   margin: 8px 0;
 `;
@@ -22,12 +22,24 @@ export const FormContent = styled.div`
   padding: 8px;
 `;
 
-export const FormHeader = styled.h2`
-  font-size: 1rem;
-  background: lightgrey;
-  margin: 0;
-  border-radius: 4px 4px 0 0;
+export const FormHeader = styled.div`
+  display: flex;
+  align-items: center;
+  cursor: pointer;
   padding: 8px;
+  background: lightgrey;
+  border-radius: 4px 4px 0 0;
+`;
+
+export const FormHeaderTitle = styled.h2`
+  font-size: 1rem;
+  margin: 0;
+  flex: 1;
+`;
+
+export const FormHeaderIcon = styled.img`
+  width: 30px;
+  height: 30px;
 `;
 
 export const FormSubmit = styled.button`
@@ -45,14 +57,37 @@ export const FormSubmit = styled.button`
 `;
 
 export const Input = styled.input`
-  flex: 4;
   border-radius: 4px;
   padding: 0 25px;
   height: 55px;
   outline: none;
-  border: 1px solid lightgrey;
-  width: 100%;
+  border: 2px solid lightgrey;
+  font-weight: bold;
+  color: grey;
   line-height: 1.2;
+  box-sizing: border-box;
+`;
+
+export const Toggle = styled.button`
+  height: 50px;
+  cursor: pointer;
+  border: 2px solid lightgrey;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: grey;
+  margin-left: 10px;
+  border-radius: 4px;
+  background-color: white;
+
+  background-color: ${props => (props.active ? props.theme.primary : null)};
+`;
+
+export const IconToggle = styled(Toggle)`
+  background-image: url(${props => props.src});
+  background-size: cover;
+  background-position: center;
+  width: 50px;
+  background-color: ${props => (props.active ? props.theme.primary : null)};
 `;
 
 export const Label = styled.label`
@@ -60,4 +95,35 @@ export const Label = styled.label`
   flex: 1;
 `;
 
-export const InputDatetime = DatePicker;
+class CustomInput extends React.Component {
+  render() {
+    const { value, onClick } = this.props;
+    return (
+      <Toggle type="button" onClick={onClick}>
+        {value}
+      </Toggle>
+    );
+  }
+}
+
+export const DatePicker = ({ onChange, ...props }) => {
+  return (
+    <div style={{ display: 'flex' }}>
+      <Toggle
+        onClick={() => {
+          onChange(new Date());
+        }}
+        type="button"
+      >
+        Jetzt
+      </Toggle>
+      <RDatePicker
+        {...props}
+        onChange={onChange}
+        customInput={<CustomInput />}
+      />
+    </div>
+  );
+};
+
+export const InputDatetime = RDatePicker;

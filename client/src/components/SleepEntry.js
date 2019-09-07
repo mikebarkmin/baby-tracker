@@ -12,6 +12,7 @@ import {
   EventDelete,
   EventDetails
 } from './EventEntry';
+import EventInlineForm from './EventInlineForm';
 import SleepForm from './SleepForm';
 import sleepIcon from '../icons/sleep.svg';
 
@@ -51,10 +52,9 @@ function SleepEntry({ wakeup, date, onDelete, onUpdate }) {
         {onDelete && <EventDelete onClick={onDelete} />}
       </EventEntry>
       {edit && (
-        <SleepForm
-          header="Bearbeiten"
-          submitLabel="Speichern"
+        <EventInlineForm
           onSubmit={handleUpdate}
+          FormContent={SleepForm}
           initalValues={{ wakeup: new Date(wakeup), date: new Date(date) }}
         />
       )}
@@ -68,4 +68,3 @@ SleepEntry.propTypes = {
 };
 
 export default SleepEntry;
-
