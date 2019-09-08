@@ -8372,7 +8372,7 @@ react-scripts@3.1.1:
   optionalDependencies:
     fsevents "2.0.7"
 
-react-spring@^8.0.27:
+react-spring@8.0.27:
   version "8.0.27"
   resolved "https://registry.yarnpkg.com/react-spring/-/react-spring-8.0.27.tgz#97d4dee677f41e0b2adcb696f3839680a3aa356a"
   integrity sha512-nDpWBe3ZVezukNRandTeLSPcwwTMjNVu1IDq9qA/AMiUqHuRN4BeSWvKr3eIxxg1vtiYiOLy4FqdfCP5IoP77g==
