@@ -52,18 +52,17 @@ const links = [
 ];
 
 function BabyJoin() {
-  const [baby] = useLocalStorage('baby', null);
+  const [baby, setBaby] = useLocalStorage('baby', null);
   const socket = useSocket();
-  socket.on('reconnect', () => {
-    if (baby !== null) {
-      socket.emit('baby/join', baby.shortId, d => {});
-    }
-  });
   useEffect(() => {
     if (baby !== null) {
-      socket.emit('baby/join', baby.shortId, d => {});
+      socket.emit('baby/join', baby.shortId, d => {
+        if (d.msg === 'baby not found') {
+          setBaby(null);
+        }
+      });
     }
-  }, [baby, socket]);
+  }, [baby, setBaby, socket]);
 
   return null;
 }

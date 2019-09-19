@@ -9,11 +9,39 @@ services:
       MONGO_INITDB_DATABASE: baby-tracker
     volumes:
       - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+    ports:
+      - 27017:27017
+
+  mongo-express:
+    image: mongo-express
+    restart: always
+    ports:
+      - 8081:8081
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: example
+
+  client:
+    build: client
+    command: yarn start
+    environment:
+      REACT_APP_SERVER: http://0.0.0.0:8080
+      NODE_ENV: development
+      CHOKIDAR_USEPOLLING: 1
+    ports:
+      - 3000:3000
+    volumes:
+      - ./client:/usr/src/app
 
   server:
-    image: mikebarkmin/baby-tracker
+    build: server
+    command: yarn dev
     environment:
+      NODE_ENV: development
       DATABASE_URL: mongodb://server:test@mongo:27017/baby-tracker
 
     ports:
       - 8080:8080
+
+    volumes:
+      - ./server:/usr/src/app

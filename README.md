@@ -48,6 +48,10 @@ You will have many little entries - trust me ;)
 
 `docker-compose up`
 
+# Deploy
+
+`docker-compose -f docker-compose.prod.yml up`
+
 ## License
 
 Licensed under the MIT License, Copyright © 2019-present Mike Barkmin.
