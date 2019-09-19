@@ -1,5 +1,7 @@
 # Baby Tracker
 
+![logo](logo.png)
+
 **A progressive web app to track your baby and share the data with your family in real-time.**
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/ac5730932862bc3cfa78/maintainability)](https://codeclimate.com/github/mikebarkmin/baby-tracker/maintainability)
