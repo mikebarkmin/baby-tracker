@@ -5,7 +5,7 @@
   "author": "Mike Barkmin",
   "license": "MIT",
   "dependencies": {
-    "@lingui/react": "^2.8.3",
+    "@lingui/react": "2.8.3",
     "axios": "0.19.0",
     "date-fns": "2.2.1",
     "polished": "3.4.1",
@@ -45,9 +45,9 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "^7.6.0",
-    "@lingui/cli": "^2.8.3",
-    "@lingui/macro": "^2.8.3",
-    "babel-core": "^7.0.0-bridge.0"
+    "@babel/core": "7.6.0",
+    "@lingui/cli": "2.8.3",
+    "@lingui/macro": "2.8.3",
+    "babel-core": "7.0.0-bridge.0"
   }
 }

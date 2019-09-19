@@ -29,7 +29,7 @@
     semver "^5.4.1"
     source-map "^0.5.0"
 
-"@babel/core@^7.6.0":
+"@babel/core@7.6.0":
   version "7.6.0"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.6.0.tgz#9b00f73554edd67bebc86df8303ef678be3d7b48"
   integrity sha512-FuRhDRtsd6IptKpHXAa+4WPZYY2ZzgowkbLBecEDDSje1X/apG7jQM33or3NdOmjXBKWGOg4JmSiRfUfuTtHXw==
@@ -1114,7 +1114,7 @@
   resolved "https://registry.yarnpkg.com/@lingui/babel-plugin-transform-react/-/babel-plugin-transform-react-2.8.3.tgz#a80a16b56dce69f9496ca7f9a10f7b5a77de13c3"
   integrity sha512-kozAtkaCEcCSFbiuZJzJd2febZTPaokUBuwPPKfehGp8v8MNPJK4kGarBNuKE8YOhkT6EpniZWk6Gk4HzjvfnA==
 
-"@lingui/cli@^2.8.3":
+"@lingui/cli@2.8.3":
   version "2.8.3"
   resolved "https://registry.yarnpkg.com/@lingui/cli/-/cli-2.8.3.tgz#7bd24a0e22854c8a5b22ab52e3bf382254607c4d"
   integrity sha512-0QrTIjoRwjt0DdOg+ZQy8B7QA0E+3r710GsJtOayTVAgCZA/xfTrUInjwsTB6afnHBEbA3jx/4FV9URwuy6Kbw==
@@ -1166,14 +1166,14 @@
     make-plural "^4.1.1"
     messageformat-parser "^2.0.0"
 
-"@lingui/macro@^2.8.3":
+"@lingui/macro@2.8.3":
   version "2.8.3"
   resolved "https://registry.yarnpkg.com/@lingui/macro/-/macro-2.8.3.tgz#2551381c8a3f75b1554327a07025ff6c5773b9a7"
   integrity sha512-gs3GO+Lwf7r8dO0XwDX9vFuh+7x4/cUz+iaMb5aBYgVsgWc9UU0RAn27ll4kORcvVzY/rVHEPGSoDUJlPIbwlw==
   dependencies:
     "@lingui/babel-plugin-transform-react" "2.8.3"
 
-"@lingui/react@^2.8.3":
+"@lingui/react@2.8.3":
   version "2.8.3"
   resolved "https://registry.yarnpkg.com/@lingui/react/-/react-2.8.3.tgz#d83e3f7b11c8a9b3d697ce7481ca3d13c7dea80c"
   integrity sha512-sW8Tm+LQKIYKy6IjdDg5/h7uxL2WGUVbp+FmigB63MmUR/i40gPG2IKRIg0ubcL9Hu9hZpqkSxT0aKigFBrsnQ==
@@ -1977,7 +1977,7 @@ babel-code-frame@^6.22.0:
     esutils "^2.0.2"
     js-tokens "^3.0.2"
 
-babel-core@^7.0.0-bridge.0:
+babel-core@7.0.0-bridge.0:
   version "7.0.0-bridge.0"
   resolved "https://registry.yarnpkg.com/babel-core/-/babel-core-7.0.0-bridge.0.tgz#95a492ddd90f9b4e9a4a1da14eb335b87b634ece"
   integrity sha512-poPX9mZH/5CSanm50Q+1toVci6pv5KSRv/5TWCwtzQS5XEwn40BcCrgIeMFWP9CKKIniKXNxoIOnOq4VVlGXhg==
