@@ -1,0 +1,26 @@
+{
+  "Left": {
+    "origin": [
+      [
+        "src/components/NursingEntry.js",
+        56
+      ]
+    ]
+  },
+  "Right": {
+    "origin": [
+      [
+        "src/components/NursingEntry.js",
+        56
+      ]
+    ]
+  },
+  "for": {
+    "origin": [
+      [
+        "src/components/NursingEntry.js",
+        57
+      ]
+    ]
+  }
+}

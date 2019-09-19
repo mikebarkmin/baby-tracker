@@ -1,0 +1,26 @@
+{
+  "Poop Color": {
+    "origin": [
+      [
+        "src/components/DiaperForm.js",
+        83
+      ]
+    ]
+  },
+  "Timestamp": {
+    "origin": [
+      [
+        "src/components/DiaperForm.js",
+        106
+      ]
+    ]
+  },
+  "Time": {
+    "origin": [
+      [
+        "src/components/DiaperForm.js",
+        112
+      ]
+    ]
+  }
+}

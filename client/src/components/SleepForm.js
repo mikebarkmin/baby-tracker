@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Trans } from '@lingui/macro';
 import { FormElement, FormContent, Label, DatePicker } from './Form';
 
 function SleepForm({ onChange, values }) {
@@ -16,32 +17,34 @@ function SleepForm({ onChange, values }) {
   return (
     <FormContent>
       <FormElement>
-        <Label>Eingeschlafen</Label>
+        <Label>
+          <Trans>Fallen asleep</Trans>
+        </Label>
         <DatePicker
           showTimeSelect
           timeIntervals={5}
           timeFormat="HH:mm"
-          timeCaption="Uhrzeit"
+          timeCaption={<Trans>Time</Trans>}
           name="date"
           withPortal
           selected={date}
           onChange={handleDateChange}
-          timeInputLabel="Time:"
           dateFormat="dd.MM.yyyy HH:mm"
         />
       </FormElement>
       <FormElement>
-        <Label>Aufgewacht</Label>
+        <Label>
+          <Trans>Wake Up</Trans>
+        </Label>
         <DatePicker
           showTimeSelect
           timeIntervals={5}
           timeFormat="HH:mm"
-          timeCaption="Uhrzeit"
+          timeCaption={<Trans>Time</Trans>}
           name="wakeup"
           withPortal
           selected={wakeup}
           onChange={handleWakeupChange}
-          timeInputLabel="Time:"
           dateFormat="dd.MM.yyyy HH:mm"
         />
       </FormElement>

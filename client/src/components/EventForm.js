@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Trans } from '@lingui/macro';
 import {
   Form,
   FormHeader,
@@ -46,8 +47,8 @@ function EventForm({ onSubmit, header, submitLabel, FormContent }) {
 }
 
 EventForm.defaultProps = {
-  header: 'Neuer Eintrag',
-  submitLabel: 'Anlegen'
+  header: <Trans>New Entry</Trans>,
+  submitLabel: <Trans>Create</Trans>
 };
 
 export default EventForm;

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Trans } from '@lingui/macro';
 import PropTypes from 'prop-types';
 import { Form, FormSubmit } from './Form';
 
@@ -35,7 +36,7 @@ EventInlineForm.propTypes = {
 };
 
 EventInlineForm.defaultProps = {
-  submitLabel: 'Speichern'
+  submitLabel: <Trans>Save</Trans>
 };
 
 export default EventInlineForm;

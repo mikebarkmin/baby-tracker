@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Trans } from '@lingui/macro';
 import PropTypes from 'prop-types';
 import { formatDistanceToNow } from 'date-fns';
-import { de } from 'date-fns/locale';
+import useLocale from '../hooks/useLocale';
 import Flex from './Flex';
 
 const Container = styled.div`
@@ -35,6 +36,7 @@ const Last = styled.div`
 `;
 
 function Summary({ name, icon, color, summary, onClick }) {
+  const { dateLocale } = useLocale();
   return (
     <Container onClick={onClick} bg={color}>
       <Header>
@@ -45,8 +47,12 @@ function Summary({ name, icon, color, summary, onClick }) {
       <Flex justifyContent="center" alignItems="center">
         {summary.last && (
           <Last>
-            Zuletzt vor{' '}
-            {formatDistanceToNow(new Date(summary.last.date), { locale: de })}
+            <Trans>
+              {formatDistanceToNow(new Date(summary.last.date), {
+                locale: dateLocale
+              })}{' '}
+              ago
+            </Trans>
           </Last>
         )}
       </Flex>
@@ -55,7 +61,7 @@ function Summary({ name, icon, color, summary, onClick }) {
 }
 
 Summary.propTypes = {
-  name: PropTypes.string,
+  name: PropTypes.element,
   icon: PropTypes.string,
   color: PropTypes.string,
   summary: PropTypes.shape({

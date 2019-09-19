@@ -1,0 +1,42 @@
+{
+  "Dashboard": {
+    "origin": [
+      [
+        "src/App.js",
+        33
+      ]
+    ]
+  },
+  "Nursing": {
+    "origin": [
+      [
+        "src/App.js",
+        38
+      ]
+    ]
+  },
+  "Diaper": {
+    "origin": [
+      [
+        "src/App.js",
+        43
+      ]
+    ]
+  },
+  "Sleep": {
+    "origin": [
+      [
+        "src/App.js",
+        48
+      ]
+    ]
+  },
+  "Food": {
+    "origin": [
+      [
+        "src/App.js",
+        53
+      ]
+    ]
+  }
+}

@@ -1,0 +1,208 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2019-09-19 22:07+0200\n"
+"Mime-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: en\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: src/pages/HomePage.js:81
+msgid "... ID"
+msgstr "... ID"
+
+#: src/pages/HomePage.js:104
+msgid "... Name"
+msgstr "... Name"
+
+#: src/components/DiaperEntry.js:35
+msgid "?"
+msgstr "?"
+
+#: src/components/FoodForm.js:60
+msgid "Amount in ml"
+msgstr "Amount in ml"
+
+#: src/components/FoodForm.js:68
+msgid "Amount in ml..."
+msgstr "Amount in ml..."
+
+#: src/pages/NursingPage.js:16
+msgid "Cradle hold"
+msgstr "Cradle hold"
+
+#: src/components/EventEntry.js:51
+#: src/components/EventForm.js:51
+#: src/pages/HomePage.js:109
+msgid "Create"
+msgstr "Create"
+
+#: src/pages/NursingPage.js:36
+msgid "Cross Cradle hold"
+msgstr "Cross Cradle hold"
+
+#: src/App.js:33
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#: src/App.js:43
+#: src/pages/DashboardPage.js:93
+msgid "Diaper"
+msgstr "Diaper"
+
+#: src/components/NursingForm.js:115
+msgid "End"
+msgstr "End"
+
+#: src/components/SleepForm.js:21
+msgid "Fallen asleep"
+msgstr "Fallen asleep"
+
+#: src/App.js:53
+#: src/pages/DashboardPage.js:111
+msgid "Food"
+msgstr "Food"
+
+#: src/pages/NursingPage.js:41
+msgid "Koala hold"
+msgstr "Koala hold"
+
+#: src/pages/NursingPage.js:26
+msgid "Laid-back"
+msgstr "Laid-back"
+
+#: src/components/NursingEntry.js:56
+#: src/components/NursingForm.js:59
+msgid "Left"
+msgstr "Left"
+
+#: src/components/Navigation.js:93
+msgid "Logout"
+msgstr "Logout"
+
+#: src/pages/NursingPage.js:21
+msgid "Lying"
+msgstr "Lying"
+
+#: src/pages/HomePage.js:96
+msgid "New Baby"
+msgstr "New Baby"
+
+#: src/components/EventForm.js:50
+msgid "New Entry"
+msgstr "New Entry"
+
+#: src/components/Form.js:119
+msgid "Now"
+msgstr "Now"
+
+#: src/App.js:38
+#: src/pages/DashboardPage.js:99
+msgid "Nursing"
+msgstr "Nursing"
+
+#: src/pages/HomePage.js:91
+msgid "Open"
+msgstr "Open"
+
+#: src/components/DiaperEntry.js:40
+msgid "Pee"
+msgstr "Pee"
+
+#: src/components/DiaperEntry.js:38
+msgid "Pee and Poop"
+msgstr "Pee and Poop"
+
+#: src/components/DiaperEntry.js:42
+msgid "Poop"
+msgstr "Poop"
+
+#: src/components/DiaperForm.js:83
+msgid "Poop Color"
+msgstr "Poop Color"
+
+#: src/components/NursingForm.js:72
+msgid "Position"
+msgstr "Position"
+
+#: src/components/NursingEntry.js:56
+#: src/components/NursingForm.js:66
+msgid "Right"
+msgstr "Right"
+
+#: src/pages/NursingPage.js:31
+msgid "Rugby ball hold"
+msgstr "Rugby ball hold"
+
+#: src/components/EventInlineForm.js:39
+msgid "Save"
+msgstr "Save"
+
+#: src/components/NursingForm.js:51
+msgid "Side"
+msgstr "Side"
+
+#: src/App.js:48
+#: src/pages/DashboardPage.js:105
+msgid "Sleep"
+msgstr "Sleep"
+
+#: src/components/NursingForm.js:99
+msgid "Start"
+msgstr "Start"
+
+#: src/components/DiaperForm.js:112
+#: src/components/FoodForm.js:82
+#: src/components/NursingForm.js:105
+#: src/components/NursingForm.js:121
+#: src/components/SleepForm.js:27
+#: src/components/SleepForm.js:43
+msgid "Time"
+msgstr "Time"
+
+#: src/components/DiaperForm.js:106
+#: src/components/FoodForm.js:76
+msgid "Timestamp"
+msgstr "Timestamp"
+
+#: src/pages/DashboardPage.js:87
+msgid "Today"
+msgstr "Today"
+
+#: src/pages/HomePage.js:72
+msgid "Track Baby"
+msgstr "Track Baby"
+
+#: src/components/FoodForm.js:43
+msgid "Type"
+msgstr "Type"
+
+#: src/components/SleepForm.js:37
+msgid "Wake Up"
+msgstr "Wake Up"
+
+#: src/components/NursingEntry.js:57
+msgid "for"
+msgstr "for"
+
+#: src/components/FoodEntry.js:41
+msgid "of"
+msgstr "of"
+
+#: src/components/Summary.js:50
+msgid "{0} ago"
+msgstr "{0} ago"
+
+#: src/components/NursingEntry.js:56
+#~ msgid "{0} for"
+#~ msgstr "{0} for"
+
+#: src/components/NursingEntry.js:56
+#~ msgid "{0} für"
+#~ msgstr "{0} für"

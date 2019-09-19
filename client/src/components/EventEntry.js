@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Trans } from '@lingui/macro';
 import { formatRelative } from 'date-fns';
-import { de } from 'date-fns/locale';
 import { lighten } from 'polished';
 import Button, { IconButton } from './Button';
 import deleteIcon from '../icons/delete.svg';
 import editIcon from '../icons/edit.svg';
+import useLocale from '../hooks/useLocale';
 
 export const EventEntry = styled.div`
   display: flex;
@@ -45,16 +46,23 @@ export const EventDelete = props => (
   </IconButton>
 );
 
-export const EventCreate = props => <Button {...props}>Erstellen</Button>;
+export const EventCreate = props => (
+  <Button {...props}>
+    <Trans>Create</Trans>
+  </Button>
+);
 
 const EventDateContainer = styled.div`
   font-size: 0.9rem;
   color: grey;
 `;
 
-export const EventDate = ({ date }) => (
-  <EventDateContainer>
-    {formatRelative(new Date(date), new Date(), { locale: de })}
-  </EventDateContainer>
-);
+export const EventDate = ({ date }) => {
+  const { dateLocale } = useLocale();
+  return (
+    <EventDateContainer>
+      {formatRelative(new Date(date), new Date(), { locale: dateLocale })}
+    </EventDateContainer>
+  );
+};
 export default EventEntry;

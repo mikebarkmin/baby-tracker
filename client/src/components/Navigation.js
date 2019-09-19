@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Trans } from '@lingui/macro';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { darken } from 'polished';
@@ -83,13 +84,13 @@ const Navigation = ({ links }) => {
                 onClick={() => setShowMenu(false)}
                 className={pathname === url ? 'active' : null}
               >
-                <NavIcon src={icon} /> {name}
+                <NavIcon src={icon} /> <Trans id={name} />
               </NavLink>
             </NavLi>
           ))}
           <NavLi>
             <NavLink to={'#'} onClick={logout}>
-              <NavIcon src={logoutIcon} /> Logout
+              <NavIcon src={logoutIcon} /> <Trans>Logout</Trans>
             </NavLink>
           </NavLi>
         </NavUl>

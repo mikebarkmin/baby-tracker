@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { I18n } from '@lingui/react';
+import { Trans, t } from '@lingui/macro';
 import PropTypes from 'prop-types';
 import Autosuggest from 'react-autosuggest';
 import { FormElement, FormContent, Input, Label, DatePicker } from './Form';
@@ -12,7 +14,7 @@ const renderInputComponent = inputProps => <Input {...inputProps} />;
 
 function FoodForm({ onChange, values }) {
   const { date, type, amount } = values;
-  const [types, setTypes] = useState(['Pre Nahrung']);
+  const [types, setTypes] = useState([]);
   const socket = useSocket();
 
   useEffect(() => {
@@ -37,7 +39,9 @@ function FoodForm({ onChange, values }) {
   return (
     <FormContent>
       <FormElement>
-        <Label>Art</Label>
+        <Label>
+          <Trans>Type</Trans>
+        </Label>
         <Autosuggest
           suggestions={types}
           onSuggestionsFetchRequested={() => {}}
@@ -52,27 +56,34 @@ function FoodForm({ onChange, values }) {
         />
       </FormElement>
       <FormElement>
-        <Label>Menge in ml</Label>
-        <Input
-          type="number"
-          value={amount}
-          name="amount"
-          placeholder="Menge in ml..."
-          onChange={handleAmountChange}
-        />
+        <Label>
+          <Trans>Amount in ml</Trans>
+        </Label>
+        <I18n>
+          {({ i18n }) => (
+            <Input
+              type="number"
+              value={amount}
+              name="amount"
+              placeholder={i18n._(t`Amount in ml...`)}
+              onChange={handleAmountChange}
+            />
+          )}
+        </I18n>
       </FormElement>
       <FormElement>
-        <Label>Zeitpunkt</Label>
+        <Label>
+          <Trans>Timestamp</Trans>
+        </Label>
         <DatePicker
           showTimeSelect
           timeIntervals={5}
           timeFormat="HH:mm"
-          timeCaption="Uhrzeit"
+          timeCaption={<Trans>Time</Trans>}
           name="date"
           withPortal
           selected={date}
           onChange={handleDateChange}
-          timeInputLabel="Time:"
           dateFormat="dd.MM.yyyy HH:mm"
         />
       </FormElement>

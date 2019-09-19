@@ -1,0 +1,42 @@
+{
+  "Type": {
+    "origin": [
+      [
+        "src/components/FoodForm.js",
+        43
+      ]
+    ]
+  },
+  "Amount in ml": {
+    "origin": [
+      [
+        "src/components/FoodForm.js",
+        60
+      ]
+    ]
+  },
+  "Amount in ml...": {
+    "origin": [
+      [
+        "src/components/FoodForm.js",
+        68
+      ]
+    ]
+  },
+  "Timestamp": {
+    "origin": [
+      [
+        "src/components/FoodForm.js",
+        76
+      ]
+    ]
+  },
+  "Time": {
+    "origin": [
+      [
+        "src/components/FoodForm.js",
+        82
+      ]
+    ]
+  }
+}

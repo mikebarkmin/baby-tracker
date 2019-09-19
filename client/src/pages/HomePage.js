@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import { I18n } from '@lingui/react';
+import { Trans, t } from '@lingui/macro';
 import useSocket from '../hooks/useSocket';
 import useLocalStorage from '../hooks/useLocalStorage';
 import Button from '../components/Button';
@@ -64,34 +66,48 @@ function HomePage() {
 
   return (
     <Root>
-      <Header>Baby-Tracker</Header>
+      <Header>Baby Tracker</Header>
       <Container>
-        <Label htmlFor="track-baby">Baby tracken</Label>
-        <Input
-          name="track-baby"
-          list="recent"
-          value={shortId}
-          onChange={handleShortIdChange}
-          placeholder="ID..."
-        />
+        <Label htmlFor="track-baby">
+          <Trans>Track Baby</Trans>
+        </Label>
+        <I18n>
+          {({ i18n }) => (
+            <Input
+              name="track-baby"
+              list="recent"
+              value={shortId}
+              onChange={handleShortIdChange}
+              placeholder={i18n._(t`... ID`)}
+            />
+          )}
+        </I18n>
         <datalist id="recent">
           {recent.map(r => (
             <option key={r} value={r} />
           ))}
         </datalist>
         <Button type="button" onClick={handleJoinBaby}>
-          Öffnen
+          <Trans>Open</Trans>
         </Button>
       </Container>
       <Container>
-        <Label htmlFor="new-baby">Neues Baby</Label>
-        <Input
-          name="new-baby"
-          value={name}
-          onChange={handleNameChange}
-          placeholder="Name..."
-        />
-        <Button onClick={handleCreateBaby}>Anlegen</Button>
+        <Label htmlFor="new-baby">
+          <Trans>New Baby</Trans>
+        </Label>
+        <I18n>
+          {({ i18n }) => (
+            <Input
+              name="new-baby"
+              value={name}
+              onChange={handleNameChange}
+              placeholder={i18n._(t`... Name`)}
+            />
+          )}
+        </I18n>
+        <Button onClick={handleCreateBaby}>
+          <Trans>Create</Trans>
+        </Button>
       </Container>
     </Root>
   );
