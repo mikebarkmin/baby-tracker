@@ -1,0 +1,62 @@
+{
+  "Side": {
+    "origin": [
+      [
+        "src/components/NursingForm.js",
+        51
+      ]
+    ]
+  },
+  "Left": {
+    "origin": [
+      [
+        "src/components/NursingForm.js",
+        59
+      ]
+    ]
+  },
+  "Right": {
+    "origin": [
+      [
+        "src/components/NursingForm.js",
+        66
+      ]
+    ]
+  },
+  "Position": {
+    "origin": [
+      [
+        "src/components/NursingForm.js",
+        72
+      ]
+    ]
+  },
+  "Start": {
+    "origin": [
+      [
+        "src/components/NursingForm.js",
+        99
+      ]
+    ]
+  },
+  "Time": {
+    "origin": [
+      [
+        "src/components/NursingForm.js",
+        105
+      ],
+      [
+        "src/components/NursingForm.js",
+        121
+      ]
+    ]
+  },
+  "End": {
+    "origin": [
+      [
+        "src/components/NursingForm.js",
+        115
+      ]
+    ]
+  }
+}

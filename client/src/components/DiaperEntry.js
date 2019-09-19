@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import { Trans } from '@lingui/macro';
 import {
   EventEntry,
   EventIcon,
@@ -31,14 +32,14 @@ function DiaperEntry({ date, pee, poop, poopColor, onDelete, onUpdate }) {
     onUpdate(values);
   }
 
-  const kind = [];
+  let kind = <Trans>?</Trans>;
 
-  if (pee) {
-    kind.push('Pipi');
-  }
-
-  if (poop) {
-    kind.push('Kacka');
+  if (pee && poop) {
+    kind = <Trans>Pee and Poop</Trans>;
+  } else if (pee) {
+    kind = <Trans>Pee</Trans>;
+  } else if (poop) {
+    kind = <Trans>Poop</Trans>;
   }
 
   return (
@@ -55,7 +56,7 @@ function DiaperEntry({ date, pee, poop, poopColor, onDelete, onUpdate }) {
         />
         <EventContent>
           <EventDetails>
-            <Kind>{kind.join(' und ')}</Kind>
+            <Kind>{kind}</Kind>
           </EventDetails>
           <EventDate date={date} />
         </EventContent>

@@ -1,0 +1,50 @@
+{
+  "Cradle hold": {
+    "origin": [
+      [
+        "src/pages/NursingPage.js",
+        16
+      ]
+    ]
+  },
+  "Lying": {
+    "origin": [
+      [
+        "src/pages/NursingPage.js",
+        21
+      ]
+    ]
+  },
+  "Laid-back": {
+    "origin": [
+      [
+        "src/pages/NursingPage.js",
+        26
+      ]
+    ]
+  },
+  "Rugby ball hold": {
+    "origin": [
+      [
+        "src/pages/NursingPage.js",
+        31
+      ]
+    ]
+  },
+  "Cross Cradle hold": {
+    "origin": [
+      [
+        "src/pages/NursingPage.js",
+        36
+      ]
+    ]
+  },
+  "Koala hold": {
+    "origin": [
+      [
+        "src/pages/NursingPage.js",
+        41
+      ]
+    ]
+  }
+}

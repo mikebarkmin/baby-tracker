@@ -1,0 +1,42 @@
+{
+  "Today": {
+    "origin": [
+      [
+        "src/pages/DashboardPage.js",
+        87
+      ]
+    ]
+  },
+  "Diaper": {
+    "origin": [
+      [
+        "src/pages/DashboardPage.js",
+        93
+      ]
+    ]
+  },
+  "Nursing": {
+    "origin": [
+      [
+        "src/pages/DashboardPage.js",
+        99
+      ]
+    ]
+  },
+  "Sleep": {
+    "origin": [
+      [
+        "src/pages/DashboardPage.js",
+        105
+      ]
+    ]
+  },
+  "Food": {
+    "origin": [
+      [
+        "src/pages/DashboardPage.js",
+        111
+      ]
+    ]
+  }
+}

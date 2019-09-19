@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Trans } from '@lingui/macro';
 import Summary from '../components/Summary';
 import { DatePicker } from '../components/Form';
 import useSocket from '../hooks/useSocket';
@@ -83,31 +84,31 @@ function DashboardPage() {
           setStart(start);
           setEnd(end);
         }}
-        todayButton="Heute"
+        todayButton={<Trans>Today</Trans>}
         maxDate={new Date()}
         dateFormat="dd.MM.yyyy"
       />
       <Flex direction="column" alignItems="center">
         <Summary
-          name="Windel"
+          name={<Trans>Diaper</Trans>}
           onClick={() => to('/diaper')}
           icon={diaperIcon}
           summary={diaperSummary}
         />
         <Summary
-          name="Stillen"
+          name={<Trans>Nursing</Trans>}
           onClick={() => to('/nursing')}
           icon={nursingIcon}
           summary={nursingSummary}
         />
         <Summary
-          name="Schlaf"
+          name={<Trans>Sleep</Trans>}
           onClick={() => to('/sleep')}
           icon={sleepIcon}
           summary={sleepSummary}
         />
         <Summary
-          name="Essen"
+          name={<Trans>Food</Trans>}
           onClick={() => to('/food')}
           icon={foodIcon}
           summary={foodSummary}

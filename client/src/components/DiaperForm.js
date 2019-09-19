@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import { Trans } from '@lingui/macro';
 import {
   FormElement,
   FormContent,
@@ -78,7 +79,9 @@ function DiaperForm({ onChange, values }) {
       </FormElement>
       {poop && (
         <FormElement>
-          <Label>Kacka Farbe</Label>
+          <Label>
+            <Trans>Poop Color</Trans>
+          </Label>
           <Flex wrap="wrap" justifyContent="flex-end" spacing={5}>
             {Object.keys(colors).map(color => (
               <PoopColorToggle
@@ -99,17 +102,18 @@ function DiaperForm({ onChange, values }) {
         </FormElement>
       )}
       <FormElement>
-        <Label>Zeitpunkt</Label>
+        <Label>
+          <Trans>Timestamp</Trans>
+        </Label>
         <DatePicker
           showTimeSelect
           timeIntervals={5}
           timeFormat="HH:mm"
-          timeCaption="Uhrzeit"
+          timeCaption={<Trans>Time</Trans>}
           name="date"
           withPortal
           selected={date}
           onChange={handleDateChange}
-          timeInputLabel="Time:"
           dateFormat="dd.MM.yyyy HH:mm"
         />
       </FormElement>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Trans } from '@lingui/macro';
 import styled from 'styled-components';
 import RDatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
@@ -115,7 +116,7 @@ export const DatePicker = ({ onChange, ...props }) => {
         }}
         type="button"
       >
-        Jetzt
+        <Trans>Now</Trans>
       </Toggle>
       <RDatePicker
         {...props}

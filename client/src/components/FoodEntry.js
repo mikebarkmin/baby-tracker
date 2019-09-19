@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import { Trans } from '@lingui/macro';
 import {
   EventEntry,
   EventIcon,
@@ -37,7 +38,7 @@ function FoodEntry({ type, amount, date, onDelete, onUpdate }) {
         <EventContent>
           <EventDetails>
             <Type>
-              {amount}ml von {type}
+              {amount}ml <Trans>of</Trans> {type}
             </Type>
           </EventDetails>
           <EventDate date={date} />

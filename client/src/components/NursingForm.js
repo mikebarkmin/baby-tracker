@@ -1,4 +1,5 @@
 import React from 'react';
+import { Trans } from '@lingui/macro';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import {
@@ -46,28 +47,34 @@ function NursingForm({ onChange, values }) {
   return (
     <FormContent>
       <FormElement>
-        <Label>Seite</Label>
+        <Label>
+          <Trans>Side</Trans>
+        </Label>
         <Flex wrap="wrap" justifyContent="flex-end" spacing={5}>
           <Toggle
             onClick={() => setBreastLeft(true)}
             active={breastLeft}
             type="button"
           >
-            Links
+            <Trans>Left</Trans>
           </Toggle>
           <Toggle
             onClick={() => setBreastLeft(false)}
             active={!breastLeft}
             type="button"
           >
-            Rechts
+            <Trans>Right</Trans>
           </Toggle>
         </Flex>
       </FormElement>
       <FormElement>
-        <Label>Position</Label>
+        <Label>
+          <Trans>Position</Trans>
+        </Label>
         <Flex direction="column">
-          <PositionName>{name}</PositionName>
+          <PositionName>
+            <Trans id={name} />
+          </PositionName>
           <Flex wrap="wrap" justifyContent="flex-end" spacing={5}>
             {positions.map(p => (
               <IconToggle
@@ -88,32 +95,34 @@ function NursingForm({ onChange, values }) {
         </Flex>
       </FormElement>
       <FormElement>
-        <Label>Start</Label>
+        <Label>
+          <Trans>Start</Trans>
+        </Label>
         <DatePicker
           showTimeSelect
           timeIntervals={5}
           timeFormat="HH:mm"
-          timeCaption="Uhrzeit"
+          timeCaption={<Trans>Time</Trans>}
           name="date"
           withPortal
           selected={date}
           onChange={handleDateChange}
-          timeInputLabel="Time:"
           dateFormat="dd.MM.yyyy HH:mm"
         />
       </FormElement>
       <FormElement>
-        <Label>Ende</Label>
+        <Label>
+          <Trans>End</Trans>
+        </Label>
         <DatePicker
           showTimeSelect
           timeIntervals={5}
           timeFormat="HH:mm"
-          timeCaption="Uhrzeit"
+          timeCaption={<Trans>Time</Trans>}
           name="end"
           withPortal
           selected={end}
           onChange={handleEndChange}
-          timeInputLabel="Time:"
           dateFormat="dd.MM.yyyy HH:mm"
         />
       </FormElement>

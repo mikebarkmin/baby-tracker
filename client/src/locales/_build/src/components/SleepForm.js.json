@@ -1,0 +1,30 @@
+{
+  "Fallen asleep": {
+    "origin": [
+      [
+        "src/components/SleepForm.js",
+        21
+      ]
+    ]
+  },
+  "Time": {
+    "origin": [
+      [
+        "src/components/SleepForm.js",
+        27
+      ],
+      [
+        "src/components/SleepForm.js",
+        43
+      ]
+    ]
+  },
+  "Wake Up": {
+    "origin": [
+      [
+        "src/components/SleepForm.js",
+        37
+      ]
+    ]
+  }
+}

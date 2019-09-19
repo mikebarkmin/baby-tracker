@@ -1,4 +1,5 @@
 import React from 'react';
+import { t } from '@lingui/macro';
 import NursingEntry from '../components/NursingEntry';
 import NursingForm from '../components/NursingForm';
 import EventsPage from './EventsPage';
@@ -12,32 +13,32 @@ import hoppePos from '../images/hoppe_reiter_haltung.png';
 export const positions = [
   {
     id: 0,
-    name: 'Wiegehaltung',
+    name: t`Cradle hold`,
     img: wiegePos
   },
   {
     id: 1,
-    name: 'Liegen',
+    name: t`Lying`,
     img: liegePos
   },
   {
     id: 2,
-    name: 'Zurückgelehnt',
+    name: t`Laid-back`,
     img: zurueckPos
   },
   {
     id: 3,
-    name: 'Footballhaltung',
+    name: t`Rugby ball hold`,
     img: footballPos
   },
   {
     id: 4,
-    name: 'Kreuzwiegehaltung',
+    name: t`Cross Cradle hold`,
     img: kreuzPos
   },
   {
     id: 5,
-    name: 'Hoppe-Reiter',
+    name: t`Koala hold`,
     img: hoppePos
   }
 ];

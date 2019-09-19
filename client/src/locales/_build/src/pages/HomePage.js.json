@@ -1,0 +1,50 @@
+{
+  "Track Baby": {
+    "origin": [
+      [
+        "src/pages/HomePage.js",
+        72
+      ]
+    ]
+  },
+  "... ID": {
+    "origin": [
+      [
+        "src/pages/HomePage.js",
+        81
+      ]
+    ]
+  },
+  "Open": {
+    "origin": [
+      [
+        "src/pages/HomePage.js",
+        91
+      ]
+    ]
+  },
+  "New Baby": {
+    "origin": [
+      [
+        "src/pages/HomePage.js",
+        96
+      ]
+    ]
+  },
+  "... Name": {
+    "origin": [
+      [
+        "src/pages/HomePage.js",
+        104
+      ]
+    ]
+  },
+  "Create": {
+    "origin": [
+      [
+        "src/pages/HomePage.js",
+        109
+      ]
+    ]
+  }
+}

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { formatDistanceStrict } from 'date-fns';
-import { de } from 'date-fns/locale';
 import {
   EventEntry,
   EventIcon,
@@ -15,6 +14,7 @@ import {
 import EventInlineForm from './EventInlineForm';
 import SleepForm from './SleepForm';
 import sleepIcon from '../icons/sleep.svg';
+import useLocale from '../hooks/useLocale';
 
 const Duration = styled.span`
   font-weight: bold;
@@ -23,6 +23,7 @@ const Duration = styled.span`
 
 function SleepEntry({ wakeup, date, onDelete, onUpdate }) {
   const [edit, setEdit] = useState(false);
+  const { dateLocale } = useLocale();
 
   function handleEdit() {
     setEdit(!edit);
@@ -33,18 +34,24 @@ function SleepEntry({ wakeup, date, onDelete, onUpdate }) {
     onUpdate(values);
   }
 
+  function getDuration() {
+    try {
+      return formatDistanceStrict(new Date(wakeup), new Date(date), {
+        unit: 'minute',
+        locale: dateLocale
+      });
+    } catch (e) {
+      return '';
+    }
+  }
+
   return (
     <>
       <EventEntry>
         <EventIcon src={sleepIcon} />
         <EventContent>
           <EventDetails>
-            <Duration>
-              {formatDistanceStrict(new Date(wakeup), new Date(date), {
-                unit: 'minute',
-                locale: de
-              })}
-            </Duration>
+            <Duration>{getDuration()}</Duration>
           </EventDetails>
           <EventDate date={date} />
         </EventContent>

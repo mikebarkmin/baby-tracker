@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import { Trans } from '@lingui/macro';
 import { formatDistanceStrict } from 'date-fns';
-import { de } from 'date-fns/locale';
 import {
   EventEntry,
   EventIcon,
@@ -15,6 +15,7 @@ import NursingForm from './NursingForm';
 import EventInlineForm from './EventInlineForm';
 import nursingIcon from '../icons/nursing.svg';
 import { positions } from '../pages/NursingPage';
+import useLocale from '../hooks/useLocale';
 
 const Type = styled.span`
   font-weight: bold;
@@ -30,6 +31,7 @@ function NursingEntry({
   onUpdate
 }) {
   const [edit, setEdit] = useState(false);
+  const { dateLocale } = useLocale();
 
   function handleEdit() {
     setEdit(!edit);
@@ -50,10 +52,12 @@ function NursingEntry({
         <EventContent>
           <EventDetails>
             <Type>
-              {name} {breastLeft ? '(Links)' : '(Rechts)'} für{' '}
+              <Trans id={name} /> (
+              {breastLeft ? <Trans>Left</Trans> : <Trans>Right</Trans>}){' '}
+              <Trans>for</Trans>{' '}
               {formatDistanceStrict(new Date(end), new Date(date), {
                 unit: 'minute',
-                locale: de
+                locale: dateLocale
               })}
             </Type>
           </EventDetails>
