@@ -31,6 +31,7 @@ io.on('connection', socket => {
   modules.food.handler(socket);
   modules.nursing.handler(socket);
   modules.sleep.handler(socket);
+  modules.measurement.handler(socket);
 
   socket.on('error', error => {
     console.error(error);
