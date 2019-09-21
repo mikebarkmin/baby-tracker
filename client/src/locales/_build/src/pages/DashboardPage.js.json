@@ -3,7 +3,7 @@
     "origin": [
       [
         "src/pages/DashboardPage.js",
-        87
+        94
       ]
     ]
   },
@@ -11,7 +11,7 @@
     "origin": [
       [
         "src/pages/DashboardPage.js",
-        93
+        100
       ]
     ]
   },
@@ -19,7 +19,7 @@
     "origin": [
       [
         "src/pages/DashboardPage.js",
-        99
+        106
       ]
     ]
   },
@@ -27,7 +27,7 @@
     "origin": [
       [
         "src/pages/DashboardPage.js",
-        105
+        112
       ]
     ]
   },
@@ -35,7 +35,15 @@
     "origin": [
       [
         "src/pages/DashboardPage.js",
-        111
+        118
+      ]
+    ]
+  },
+  "Measurement": {
+    "origin": [
+      [
+        "src/pages/DashboardPage.js",
+        124
       ]
     ]
   }

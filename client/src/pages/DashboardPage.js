@@ -8,9 +8,11 @@ import FoodEntry from '../components/FoodEntry';
 import NursingEntry from '../components/NursingEntry';
 import SleepEntry from '../components/SleepEntry';
 import DiaperEntry from '../components/DiaperEntry';
+import MeasurementEntry from '../components/MeasurementEntry';
 import diaperIcon from '../icons/diaper.svg';
 import nursingIcon from '../icons/nursing.svg';
 import foodIcon from '../icons/food.svg';
+import measurmentIcon from '../icons/measurement.svg';
 import sleepIcon from '../icons/sleep.svg';
 import { sortEvents } from './EventsPage';
 import Flex from '../components/Flex';
@@ -46,6 +48,7 @@ function DashboardPage() {
   const foodSummary = useSummary('food', start, end);
   const nursingSummary = useSummary('nursing', start, end);
   const sleepSummary = useSummary('sleep', start, end);
+  const measurementSummary = useSummary('measurement', start, end);
   const router = useRouter();
 
   let events = [];
@@ -63,6 +66,10 @@ function DashboardPage() {
   });
   sleepSummary.events.forEach(e => {
     e._type = 'sleep';
+    events.push(e);
+  });
+  measurementSummary.events.forEach(e => {
+    e._type = 'measurement';
     events.push(e);
   });
 
@@ -113,6 +120,12 @@ function DashboardPage() {
           icon={foodIcon}
           summary={foodSummary}
         />
+        <Summary
+          name={<Trans>Measurement</Trans>}
+          onClick={() => to('/measurement')}
+          icon={measurmentIcon}
+          summary={measurementSummary}
+        />
       </Flex>
       <Flex direction="column" justifyContent="center" spacing={2}>
         {events.map(e => {
@@ -125,6 +138,8 @@ function DashboardPage() {
               return <SleepEntry key={e._id} {...e} />;
             case 'nursing':
               return <NursingEntry key={e._id} {...e} />;
+            case 'measurement':
+              return <MeasurementEntry key={e._id} {...e} />;
             default:
               return null;
           }

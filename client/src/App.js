@@ -11,6 +11,7 @@ import DiaperPage from './pages/DiaperPage';
 import SleepPage from './pages/SleepPage';
 import FoodPage from './pages/FoodPage';
 import HomePage from './pages/HomePage';
+import MeasurementPage from './pages/MeasurementPage';
 import { I18nProvider } from '@lingui/react';
 import SocketProvider from './components/SocketProvider';
 import useLocalStorage from './hooks/useLocalStorage';
@@ -24,6 +25,7 @@ import nursingIcon from './icons/nursing.svg';
 import diaperIcon from './icons/diaper.svg';
 import sleepIcon from './icons/sleep.svg';
 import foodIcon from './icons/food.svg';
+import measurementIcon from './icons/measurement.svg';
 
 import useLocale from './hooks/useLocale';
 import catalogs from './locales/catalogs';
@@ -53,6 +55,11 @@ const links = [
     name: t`Food`,
     url: '/food',
     icon: foodIcon
+  },
+  {
+    name: t`Measurement`,
+    url: '/measurement',
+    icon: measurementIcon
   }
 ];
 
@@ -115,6 +122,11 @@ function App() {
                       <Route exact path="/diaper" component={DiaperPage} />
                       <Route exact path="/sleep" component={SleepPage} />
                       <Route exact path="/food" component={FoodPage} />
+                      <Route
+                        exact
+                        path="/measurement"
+                        component={MeasurementPage}
+                      />
                     </Switch>
                   </Main>
                 </>

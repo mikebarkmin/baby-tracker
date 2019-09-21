@@ -3,6 +3,7 @@ import diaper from './diaper';
 import nursing from './nursing';
 import sleep from './sleep';
 import food from './food';
+import measurement from './measurement';
 
 export function eventHandler(socket, socketPrefix, Model) {
   socket.on(`${socketPrefix}/summary`, function(start, end, callback) {
@@ -38,6 +39,22 @@ export function eventHandler(socket, socketPrefix, Model) {
             events: docs
           }
         });
+      })
+      .catch(e => {
+        callback({ msg: e });
+      });
+  });
+
+  socket.on(`${socketPrefix}/latest`, function(callback) {
+    if (!socket.baby) {
+      callback({ msg: 'no baby' });
+      return;
+    }
+    const babyId = socket.baby._id;
+    Model.findOne({ babyId })
+      .sort({ date: -1 })
+      .then(doc => {
+        callback({ msg: 'success', event: doc });
       })
       .catch(e => {
         callback({ msg: e });
@@ -118,5 +135,6 @@ export default {
   diaper,
   food,
   nursing,
+  measurement,
   sleep
 };

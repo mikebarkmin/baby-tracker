@@ -47,12 +47,12 @@ msgstr "Create"
 msgid "Cross Cradle hold"
 msgstr "Cross Cradle hold"
 
-#: src/App.js:33
+#: src/App.js:35
 msgid "Dashboard"
 msgstr "Dashboard"
 
-#: src/App.js:43
-#: src/pages/DashboardPage.js:93
+#: src/App.js:45
+#: src/pages/DashboardPage.js:100
 msgid "Diaper"
 msgstr "Diaper"
 
@@ -64,10 +64,26 @@ msgstr "End"
 msgid "Fallen asleep"
 msgstr "Fallen asleep"
 
-#: src/App.js:53
-#: src/pages/DashboardPage.js:111
+#: src/App.js:55
+#: src/pages/DashboardPage.js:118
 msgid "Food"
 msgstr "Food"
+
+#: src/components/MeasurementForm.js:75
+msgid "Head Circumference in cm"
+msgstr "Head Circumference in cm"
+
+#: src/components/MeasurementForm.js:83
+msgid "Head Circumference in cm..."
+msgstr "Head Circumference in cm..."
+
+#: src/components/MeasurementForm.js:59
+msgid "Height in cm"
+msgstr "Height in cm"
+
+#: src/components/MeasurementForm.js:67
+msgid "Height in cm..."
+msgstr "Height in cm..."
 
 #: src/pages/NursingPage.js:41
 msgid "Koala hold"
@@ -90,6 +106,11 @@ msgstr "Logout"
 msgid "Lying"
 msgstr "Lying"
 
+#: src/App.js:60
+#: src/pages/DashboardPage.js:124
+msgid "Measurement"
+msgstr "Measurement"
+
 #: src/pages/HomePage.js:96
 msgid "New Baby"
 msgstr "New Baby"
@@ -102,8 +123,8 @@ msgstr "New Entry"
 msgid "Now"
 msgstr "Now"
 
-#: src/App.js:38
-#: src/pages/DashboardPage.js:99
+#: src/App.js:40
+#: src/pages/DashboardPage.js:106
 msgid "Nursing"
 msgstr "Nursing"
 
@@ -148,8 +169,8 @@ msgstr "Save"
 msgid "Side"
 msgstr "Side"
 
-#: src/App.js:48
-#: src/pages/DashboardPage.js:105
+#: src/App.js:50
+#: src/pages/DashboardPage.js:112
 msgid "Sleep"
 msgstr "Sleep"
 
@@ -159,6 +180,7 @@ msgstr "Start"
 
 #: src/components/DiaperForm.js:112
 #: src/components/FoodForm.js:82
+#: src/components/MeasurementForm.js:97
 #: src/components/NursingForm.js:105
 #: src/components/NursingForm.js:121
 #: src/components/SleepForm.js:27
@@ -168,10 +190,11 @@ msgstr "Time"
 
 #: src/components/DiaperForm.js:106
 #: src/components/FoodForm.js:76
+#: src/components/MeasurementForm.js:91
 msgid "Timestamp"
 msgstr "Timestamp"
 
-#: src/pages/DashboardPage.js:87
+#: src/pages/DashboardPage.js:94
 msgid "Today"
 msgstr "Today"
 
@@ -186,6 +209,14 @@ msgstr "Type"
 #: src/components/SleepForm.js:37
 msgid "Wake Up"
 msgstr "Wake Up"
+
+#: src/components/MeasurementForm.js:43
+msgid "Weight in g"
+msgstr "Weight in g"
+
+#: src/components/MeasurementForm.js:51
+msgid "Weight in g..."
+msgstr "Weight in g..."
 
 #: src/components/NursingEntry.js:57
 msgid "for"

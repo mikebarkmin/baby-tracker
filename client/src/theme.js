@@ -5,6 +5,6 @@ export default {
   warning: 'orange',
   success: 'green',
   error: 'red',
-  maxWidth: 1280,
-  mobileWidth: 900
+  maxWidth: 1440,
+  mobileWidth: 1280
 };

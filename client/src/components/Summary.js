@@ -8,7 +8,7 @@ import Flex from './Flex';
 
 const Container = styled.div`
   display: flex;
-  width: 280px;
+  width: 350px;
   flex-direction: column;
   cursor: pointer;
   background-color: ${props => props.bg || 'white'};
