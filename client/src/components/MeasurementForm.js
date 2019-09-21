@@ -12,8 +12,9 @@ function MeasurementForm({ onChange, values }) {
 
   useEffect(() => {
     socket.emit('measurement/latest', d => {
-      console.log(d);
-      setLatest(d.event);
+      if (d && d.event) {
+        setLatest(d.event);
+      }
     });
   }, [socket]);
 
