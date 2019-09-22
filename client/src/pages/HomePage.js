@@ -1,11 +1,19 @@
 import React, { useState } from 'react';
+import Autosuggest from 'react-autosuggest';
 import styled from 'styled-components';
 import { I18n } from '@lingui/react';
 import { Trans, t } from '@lingui/macro';
 import useSocket from '../hooks/useSocket';
 import useLocalStorage from '../hooks/useLocalStorage';
-import Button from '../components/Button';
-import { Input, Label } from '../components/Form';
+import {
+  Input,
+  Form,
+  FormHeader,
+  FormContent,
+  FormHeaderTitle,
+  FormSubmit
+} from '../components/Form';
+import logoIcon from '../icons/logo.svg';
 
 const Root = styled.div`
   display: flex;
@@ -17,18 +25,13 @@ const Root = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: ${props => props.theme.primary};
 `;
 
-const Header = styled.h1``;
+const getSuggestionValue = suggestion => suggestion;
 
-const Container = styled.div`
-  margin-bottom: 30px;
-  max-width: 600px;
-  padding: 8px;
-  border-radius: 4px;
-  background: smokewhite;
-`;
+const renderSuggestion = suggestion => <span>{suggestion}</span>;
+
+const renderInputComponent = inputProps => <Input {...inputProps} />;
 
 function HomePage() {
   const [shortId, setShortId] = useState('');
@@ -56,8 +59,8 @@ function HomePage() {
     });
   }
 
-  function handleShortIdChange(e) {
-    setShortId(e.target.value);
+  function handleShortIdChange(e, { newValue }) {
+    setShortId(newValue);
   }
 
   function handleNameChange(e) {
@@ -66,49 +69,63 @@ function HomePage() {
 
   return (
     <Root>
-      <Header>Baby Tracker</Header>
-      <Container>
-        <Label htmlFor="track-baby">
-          <Trans>Track Baby</Trans>
-        </Label>
-        <I18n>
-          {({ i18n }) => (
-            <Input
-              name="track-baby"
-              list="recent"
-              value={shortId}
-              onChange={handleShortIdChange}
-              placeholder={`${i18n._(t`ID`)}...`}
-            />
-          )}
-        </I18n>
-        <datalist id="recent">
-          {recent.map(r => (
-            <option key={r} value={r} />
-          ))}
-        </datalist>
-        <Button type="button" onClick={handleJoinBaby}>
-          <Trans>Open</Trans>
-        </Button>
-      </Container>
-      <Container>
-        <Label htmlFor="new-baby">
-          <Trans>New Baby</Trans>
-        </Label>
-        <I18n>
-          {({ i18n }) => (
-            <Input
-              name="new-baby"
-              value={name}
-              onChange={handleNameChange}
-              placeholder={`${i18n._(t`Name`)}...`}
-            />
-          )}
-        </I18n>
-        <Button onClick={handleCreateBaby}>
-          <Trans>Create</Trans>
-        </Button>
-      </Container>
+      <img alt="logo" width={200} src={logoIcon} />
+      <br />
+      <div>
+        <Form>
+          <FormHeader>
+            <FormHeaderTitle>
+              <Trans>Track Baby</Trans>
+            </FormHeaderTitle>
+          </FormHeader>
+          <FormContent>
+            <I18n>
+              {({ i18n }) => (
+                <Autosuggest
+                  suggestions={recent}
+                  onSuggestionsFetchRequested={() => {}}
+                  onSuggestionsClearRequested={() => {}}
+                  getSuggestionValue={getSuggestionValue}
+                  shouldRenderSuggestions={() => true}
+                  renderSuggestion={renderSuggestion}
+                  renderInputComponent={renderInputComponent}
+                  inputProps={{
+                    value: shortId,
+                    onChange: handleShortIdChange,
+                    placeholder: `${i18n._(t`ID`)}...`
+                  }}
+                />
+              )}
+            </I18n>
+          </FormContent>
+          <FormSubmit type="button" onClick={handleJoinBaby}>
+            <Trans>Open</Trans>
+          </FormSubmit>
+        </Form>
+        <br />
+        <Form>
+          <FormHeader>
+            <FormHeaderTitle>
+              <Trans>New Baby</Trans>
+            </FormHeaderTitle>
+          </FormHeader>
+          <FormContent>
+            <I18n>
+              {({ i18n }) => (
+                <Input
+                  name="new-baby"
+                  value={name}
+                  onChange={handleNameChange}
+                  placeholder={`${i18n._(t`Name`)}...`}
+                />
+              )}
+            </I18n>
+          </FormContent>
+          <FormSubmit type="button" onClick={handleCreateBaby}>
+            <Trans>Create</Trans>
+          </FormSubmit>
+        </Form>
+      </div>
     </Root>
   );
 }

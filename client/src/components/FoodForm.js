@@ -47,6 +47,7 @@ function FoodForm({ onChange, values }) {
           onSuggestionsFetchRequested={() => {}}
           onSuggestionsClearRequested={() => {}}
           getSuggestionValue={getSuggestionValue}
+          shouldRenderSuggestions={() => true}
           renderSuggestion={renderSuggestion}
           renderInputComponent={renderInputComponent}
           inputProps={{

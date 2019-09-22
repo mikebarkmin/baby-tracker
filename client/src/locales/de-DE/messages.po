@@ -17,8 +17,8 @@ msgstr ""
 msgid "?"
 msgstr "?"
 
-#: src/components/FoodForm.js:60
-#: src/components/FoodForm.js:68
+#: src/components/FoodForm.js:61
+#: src/components/FoodForm.js:69
 msgid "Amount in ml"
 msgstr "Menge in ml"
 
@@ -28,7 +28,7 @@ msgstr "Wiegehaltung"
 
 #: src/components/EventEntry.js:51
 #: src/components/EventForm.js:51
-#: src/pages/HomePage.js:109
+#: src/pages/HomePage.js:125
 msgid "Create"
 msgstr "Erstellen"
 
@@ -68,7 +68,7 @@ msgstr "Kopfumfang in cm"
 msgid "Height in cm"
 msgstr "Größe in cm"
 
-#: src/pages/HomePage.js:81
+#: src/pages/HomePage.js:95
 msgid "ID"
 msgstr "ID"
 
@@ -98,11 +98,11 @@ msgstr "Liegend"
 msgid "Measurement"
 msgstr "Messung"
 
-#: src/pages/HomePage.js:104
+#: src/pages/HomePage.js:119
 msgid "Name"
 msgstr "Name"
 
-#: src/pages/HomePage.js:96
+#: src/pages/HomePage.js:109
 msgid "New Baby"
 msgstr "Neues Baby"
 
@@ -119,7 +119,7 @@ msgstr "Jetzt"
 msgid "Nursing"
 msgstr "Stillen"
 
-#: src/pages/HomePage.js:91
+#: src/pages/HomePage.js:102
 msgid "Open"
 msgstr "Öffnen"
 
@@ -170,7 +170,7 @@ msgid "Start"
 msgstr "Start"
 
 #: src/components/DiaperForm.js:112
-#: src/components/FoodForm.js:82
+#: src/components/FoodForm.js:83
 #: src/components/MeasurementForm.js:102
 #: src/components/NursingForm.js:105
 #: src/components/NursingForm.js:121
@@ -180,7 +180,7 @@ msgid "Time"
 msgstr "Zeit"
 
 #: src/components/DiaperForm.js:106
-#: src/components/FoodForm.js:76
+#: src/components/FoodForm.js:77
 #: src/components/MeasurementForm.js:96
 msgid "Timestamp"
 msgstr "Uhrzeit"
@@ -189,7 +189,7 @@ msgstr "Uhrzeit"
 msgid "Today"
 msgstr "Heute"
 
-#: src/pages/HomePage.js:72
+#: src/pages/HomePage.js:78
 msgid "Track Baby"
 msgstr "Baby tracken"
 
