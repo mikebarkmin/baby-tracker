@@ -78,7 +78,7 @@ function HomePage() {
               list="recent"
               value={shortId}
               onChange={handleShortIdChange}
-              placeholder={i18n._(t`... ID`)}
+              placeholder={`${i18n._(t`ID`)}...`}
             />
           )}
         </I18n>
@@ -101,7 +101,7 @@ function HomePage() {
               name="new-baby"
               value={name}
               onChange={handleNameChange}
-              placeholder={i18n._(t`... Name`)}
+              placeholder={`${i18n._(t`Name`)}...`}
             />
           )}
         </I18n>

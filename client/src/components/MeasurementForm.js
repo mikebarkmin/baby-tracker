@@ -7,13 +7,17 @@ import useSocket from '../hooks/useSocket';
 
 function MeasurementForm({ onChange, values }) {
   const { date, weight, height, headCircumference } = values;
-  const [latest, setLatest] = useState({});
   const socket = useSocket();
 
   useEffect(() => {
     socket.emit('measurement/latest', d => {
       if (d && d.event) {
-        setLatest(d.event);
+        onChange({
+          ...values,
+          height: d.event.height,
+          weight: d.event.weight,
+          headCircumference: d.event.headCircumference
+        });
       }
     });
   }, [socket]);
@@ -47,9 +51,9 @@ function MeasurementForm({ onChange, values }) {
           {({ i18n }) => (
             <Input
               type="number"
-              value={weight || latest.weight || 0}
+              value={weight}
               name="weight"
-              placeholder={i18n._(t`Weight in g...`)}
+              placeholder={`${i18n._(t`Weight in g`)}...`}
               onChange={handleWeightChange}
             />
           )}
@@ -63,9 +67,9 @@ function MeasurementForm({ onChange, values }) {
           {({ i18n }) => (
             <Input
               type="number"
-              value={height || latest.height || 0}
+              value={height}
               name="height"
-              placeholder={i18n._(t`Height in cm...`)}
+              placeholder={`${i18n._(t`Height in cm`)}...`}
               onChange={handleHeightChange}
             />
           )}
@@ -79,9 +83,9 @@ function MeasurementForm({ onChange, values }) {
           {({ i18n }) => (
             <Input
               type="number"
-              value={headCircumference || latest.headCircumference || 0}
+              value={headCircumference}
               name="headCircumference"
-              placeholder={i18n._(t`Head Circumference in cm...`)}
+              placeholder={`${i18n._(t`Head Circumference in cm`)}...`}
               onChange={handleHeadCirumferenceChange}
             />
           )}
@@ -115,11 +119,10 @@ MeasurementForm.propTypes = {
 MeasurementForm.defaultProps = {
   values: {
     date: new Date(),
-    height: undefined,
-    weight: undefined,
-    headCircumference: undefined
+    height: 0,
+    weight: 0,
+    headCircumference: 0
   }
 };
 
 export default MeasurementForm;
-

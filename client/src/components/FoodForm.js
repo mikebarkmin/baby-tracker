@@ -65,7 +65,7 @@ function FoodForm({ onChange, values }) {
               type="number"
               value={amount}
               name="amount"
-              placeholder={i18n._(t`Amount in ml...`)}
+              placeholder={`${i18n._(t`Amount in ml`)}...`}
               onChange={handleAmountChange}
             />
           )}

@@ -12,11 +12,7 @@
       [
         "src/components/FoodForm.js",
         60
-      ]
-    ]
-  },
-  "Amount in ml...": {
-    "origin": [
+      ],
       [
         "src/components/FoodForm.js",
         68

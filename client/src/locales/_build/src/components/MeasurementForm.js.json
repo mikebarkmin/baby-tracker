@@ -3,15 +3,11 @@
     "origin": [
       [
         "src/components/MeasurementForm.js",
-        43
-      ]
-    ]
-  },
-  "Weight in g...": {
-    "origin": [
+        48
+      ],
       [
         "src/components/MeasurementForm.js",
-        51
+        56
       ]
     ]
   },
@@ -19,15 +15,11 @@
     "origin": [
       [
         "src/components/MeasurementForm.js",
-        59
-      ]
-    ]
-  },
-  "Height in cm...": {
-    "origin": [
+        64
+      ],
       [
         "src/components/MeasurementForm.js",
-        67
+        72
       ]
     ]
   },
@@ -35,15 +27,11 @@
     "origin": [
       [
         "src/components/MeasurementForm.js",
-        75
-      ]
-    ]
-  },
-  "Head Circumference in cm...": {
-    "origin": [
+        80
+      ],
       [
         "src/components/MeasurementForm.js",
-        83
+        88
       ]
     ]
   },
@@ -51,7 +39,7 @@
     "origin": [
       [
         "src/components/MeasurementForm.js",
-        91
+        96
       ]
     ]
   },
@@ -59,7 +47,7 @@
     "origin": [
       [
         "src/components/MeasurementForm.js",
-        97
+        102
       ]
     ]
   }

@@ -1,11 +1,11 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2019-09-19 22:07+0200\n"
+"POT-Creation-Date: 2019-09-22 09:19+0200\n"
 "Mime-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
-"Language: en\n"
+"Language: fr\n"
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: \n"
@@ -13,227 +13,207 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/pages/HomePage.js:81
-msgid "... ID"
-msgstr "... ID"
-
-#: src/pages/HomePage.js:104
-msgid "... Name"
-msgstr "... Name"
-
 #: src/components/DiaperEntry.js:35
 msgid "?"
-msgstr "?"
+msgstr ""
 
 #: src/components/FoodForm.js:60
-msgid "Amount in ml"
-msgstr "Amount in ml"
-
 #: src/components/FoodForm.js:68
-msgid "Amount in ml..."
-msgstr "Amount in ml..."
+msgid "Amount in ml"
+msgstr ""
 
 #: src/pages/NursingPage.js:16
 msgid "Cradle hold"
-msgstr "Cradle hold"
+msgstr ""
 
 #: src/components/EventEntry.js:51
 #: src/components/EventForm.js:51
 #: src/pages/HomePage.js:109
 msgid "Create"
-msgstr "Create"
+msgstr ""
 
 #: src/pages/NursingPage.js:36
 msgid "Cross Cradle hold"
-msgstr "Cross Cradle hold"
+msgstr ""
 
 #: src/App.js:35
 msgid "Dashboard"
-msgstr "Dashboard"
+msgstr ""
 
 #: src/App.js:45
 #: src/pages/DashboardPage.js:100
 msgid "Diaper"
-msgstr "Diaper"
+msgstr ""
 
 #: src/components/NursingForm.js:115
 msgid "End"
-msgstr "End"
+msgstr ""
 
 #: src/components/SleepForm.js:21
 msgid "Fallen asleep"
-msgstr "Fallen asleep"
+msgstr ""
 
 #: src/App.js:55
 #: src/pages/DashboardPage.js:118
 msgid "Food"
-msgstr "Food"
+msgstr ""
 
-#: src/components/MeasurementForm.js:75
+#: src/components/MeasurementForm.js:80
+#: src/components/MeasurementForm.js:88
 msgid "Head Circumference in cm"
-msgstr "Head Circumference in cm"
+msgstr ""
 
-#: src/components/MeasurementForm.js:83
-msgid "Head Circumference in cm..."
-msgstr "Head Circumference in cm..."
-
-#: src/components/MeasurementForm.js:59
+#: src/components/MeasurementForm.js:64
+#: src/components/MeasurementForm.js:72
 msgid "Height in cm"
-msgstr "Height in cm"
+msgstr ""
 
-#: src/components/MeasurementForm.js:67
-msgid "Height in cm..."
-msgstr "Height in cm..."
+#: src/pages/HomePage.js:81
+msgid "ID"
+msgstr ""
 
 #: src/pages/NursingPage.js:41
 msgid "Koala hold"
-msgstr "Koala hold"
+msgstr ""
 
 #: src/pages/NursingPage.js:26
 msgid "Laid-back"
-msgstr "Laid-back"
+msgstr ""
 
 #: src/components/NursingEntry.js:56
 #: src/components/NursingForm.js:59
 msgid "Left"
-msgstr "Left"
+msgstr ""
 
 #: src/components/Navigation.js:93
 msgid "Logout"
-msgstr "Logout"
+msgstr ""
 
 #: src/pages/NursingPage.js:21
 msgid "Lying"
-msgstr "Lying"
+msgstr ""
 
 #: src/App.js:60
 #: src/pages/DashboardPage.js:124
 msgid "Measurement"
-msgstr "Measurement"
+msgstr ""
+
+#: src/pages/HomePage.js:104
+msgid "Name"
+msgstr ""
 
 #: src/pages/HomePage.js:96
 msgid "New Baby"
-msgstr "New Baby"
+msgstr ""
 
 #: src/components/EventForm.js:50
 msgid "New Entry"
-msgstr "New Entry"
+msgstr ""
 
 #: src/components/Form.js:119
 msgid "Now"
-msgstr "Now"
+msgstr ""
 
 #: src/App.js:40
 #: src/pages/DashboardPage.js:106
 msgid "Nursing"
-msgstr "Nursing"
+msgstr ""
 
 #: src/pages/HomePage.js:91
 msgid "Open"
-msgstr "Open"
+msgstr ""
 
 #: src/components/DiaperEntry.js:40
 msgid "Pee"
-msgstr "Pee"
+msgstr ""
 
 #: src/components/DiaperEntry.js:38
 msgid "Pee and Poop"
-msgstr "Pee and Poop"
+msgstr ""
 
 #: src/components/DiaperEntry.js:42
 msgid "Poop"
-msgstr "Poop"
+msgstr ""
 
 #: src/components/DiaperForm.js:83
 msgid "Poop Color"
-msgstr "Poop Color"
+msgstr ""
 
 #: src/components/NursingForm.js:72
 msgid "Position"
-msgstr "Position"
+msgstr ""
 
 #: src/components/NursingEntry.js:56
 #: src/components/NursingForm.js:66
 msgid "Right"
-msgstr "Right"
+msgstr ""
 
 #: src/pages/NursingPage.js:31
 msgid "Rugby ball hold"
-msgstr "Rugby ball hold"
+msgstr ""
 
 #: src/components/EventInlineForm.js:39
 msgid "Save"
-msgstr "Save"
+msgstr ""
 
 #: src/components/NursingForm.js:51
 msgid "Side"
-msgstr "Side"
+msgstr ""
 
 #: src/App.js:50
 #: src/pages/DashboardPage.js:112
 msgid "Sleep"
-msgstr "Sleep"
+msgstr ""
 
 #: src/components/NursingForm.js:99
 msgid "Start"
-msgstr "Start"
+msgstr ""
 
 #: src/components/DiaperForm.js:112
 #: src/components/FoodForm.js:82
-#: src/components/MeasurementForm.js:97
+#: src/components/MeasurementForm.js:102
 #: src/components/NursingForm.js:105
 #: src/components/NursingForm.js:121
 #: src/components/SleepForm.js:27
 #: src/components/SleepForm.js:43
 msgid "Time"
-msgstr "Time"
+msgstr ""
 
 #: src/components/DiaperForm.js:106
 #: src/components/FoodForm.js:76
-#: src/components/MeasurementForm.js:91
+#: src/components/MeasurementForm.js:96
 msgid "Timestamp"
-msgstr "Timestamp"
+msgstr ""
 
 #: src/pages/DashboardPage.js:94
 msgid "Today"
-msgstr "Today"
+msgstr ""
 
 #: src/pages/HomePage.js:72
 msgid "Track Baby"
-msgstr "Track Baby"
+msgstr ""
 
 #: src/components/FoodForm.js:43
 msgid "Type"
-msgstr "Type"
+msgstr ""
 
 #: src/components/SleepForm.js:37
 msgid "Wake Up"
-msgstr "Wake Up"
+msgstr ""
 
-#: src/components/MeasurementForm.js:43
+#: src/components/MeasurementForm.js:48
+#: src/components/MeasurementForm.js:56
 msgid "Weight in g"
-msgstr "Weight in g"
-
-#: src/components/MeasurementForm.js:51
-msgid "Weight in g..."
-msgstr "Weight in g..."
+msgstr ""
 
 #: src/components/NursingEntry.js:57
 msgid "for"
-msgstr "for"
+msgstr ""
 
 #: src/components/FoodEntry.js:41
 msgid "of"
-msgstr "of"
+msgstr ""
 
 #: src/components/Summary.js:50
 msgid "{0} ago"
-msgstr "{0} ago"
-
-#: src/components/NursingEntry.js:56
-#~ msgid "{0} for"
-#~ msgstr "{0} for"
-
-#: src/components/NursingEntry.js:56
-#~ msgid "{0} für"
-#~ msgstr "{0} für"
+msgstr ""
