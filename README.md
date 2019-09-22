@@ -1,6 +1,7 @@
 # Baby Tracker
 
 ![logo](logo.png)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmikebarkmin%2Fbaby-tracker.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmikebarkmin%2Fbaby-tracker?ref=badge_shield)
 
 **A progressive web app to track your baby and share the data with your family in real-time.**
 
@@ -63,3 +64,6 @@ Big, Short, Fat, Slim. You will know it ;)
 Licensed under the MIT License, Copyright © 2019-present Mike Barkmin.
 
 See [LICENSE](./LICENSE) for more information.
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmikebarkmin%2Fbaby-tracker.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmikebarkmin%2Fbaby-tracker?ref=badge_large)
