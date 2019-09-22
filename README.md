@@ -1,6 +1,6 @@
 # Baby Tracker
 
-![logo](logo.png)
+![logo](https://github.com/mikebarkmin/baby-tracker/raw/master/logo.png)
 
 **A progressive web app to track your baby and share the data with your family in real-time.**
 
