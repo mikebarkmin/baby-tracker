@@ -54,7 +54,13 @@ Please add your questions as GitHub issue: [Baby-Tracker Feature Requests and Bu
 
 ## Develop
 
-`docker-compose up`
+```
+Fork https://github.com/mikebarkmin/baby-tracker.git
+git clone https://github.com/{yourusername}/baby-tracker.git
+cd baby-tracker
+docker-compose up
+Submit a pull request
+```
 
 ## Deploy
 
