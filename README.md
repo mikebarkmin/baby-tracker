@@ -58,7 +58,13 @@ Please add your questions as GitHub issue: [Baby-Tracker Feature Requests and Bu
 
 ## Deploy
 
-`docker-compose -f docker-compose.prod.yml up`
+```
+wget https://github.com/mikebarkmin/baby-tracker/raw/master/docker-compose.prod.yml
+wget https://github.com/mikebarkmin/baby-tracker/raw/master/mongo-init.js
+Change username and password to something other than server/test
+docker-compose -f docker-compose.prod.yml up
+Visit localhost:8080
+```
 
 ## License
 
