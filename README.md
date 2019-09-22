@@ -1,11 +1,11 @@
 # Baby Tracker
 
-![logo](logo.png)
+![logo](https://github.com/mikebarkmin/baby-tracker/raw/master/logo.png)
 
 **A progressive web app to track your baby and share the data with your family in real-time.**
 
 [![Contributors](https://img.shields.io/github/contributors/mikebarkmin/baby-tracker.svg "Contributors")](https://github.com/mikebarkmin/baby-tracker/graphs/contributors)
-[![Docker Hub container status](https://img.shields.io/docker/build/mikebarkmin/baby-tracker.svg "Docker Hub container status")](https://hub.docker.com/r/mikebarkmin/baby-tracker)
+[![Docker Cloud container status](https://img.shields.io/docker/cloud/build/mikebarkmin/baby-tracker.svg "Docker Cloud container status")](https://hub.docker.com/r/mikebarkmin/baby-tracker)
 [![Docker Pulls](https://img.shields.io/docker/pulls/mikebarkmin/baby-tracker)](https://cloud.docker.com/repository/docker/mikebarkmin/baby-tracker)
 [![Maintainability](https://api.codeclimate.com/v1/badges/ac5730932862bc3cfa78/maintainability)](https://codeclimate.com/github/mikebarkmin/baby-tracker/maintainability)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmikebarkmin%2Fbaby-tracker.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmikebarkmin%2Fbaby-tracker?ref=badge_shield)
@@ -64,4 +64,4 @@ Please add your questions as GitHub issue: [Baby-Tracker Feature Requests and Bu
 
 Licensed under the MIT License, Copyright © 2019-present Mike Barkmin.
 
-See [LICENSE](./LICENSE) for more information.
+See [LICENSE](https://raw.githubusercontent.com/mikebarkmin/baby-tracker/master/LICENSE) for more information.
