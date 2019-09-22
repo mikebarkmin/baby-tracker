@@ -64,4 +64,4 @@ Please add your questions as GitHub issue: [Baby-Tracker Feature Requests and Bu
 
 Licensed under the MIT License, Copyright © 2019-present Mike Barkmin.
 
-See [LICENSE](./LICENSE) for more information.
+See [LICENSE](https://raw.githubusercontent.com/mikebarkmin/baby-tracker/master/LICENSE) for more information.
