@@ -19,7 +19,8 @@ msgstr ""
 msgid "?"
 msgstr "?"
 
-#: src/components/FoodForm.js:60 src/components/FoodForm.js:68
+#: src/components/FoodForm.js:60
+#: src/components/FoodForm.js:68
 msgid "Amount in ml"
 msgstr "Quantité (ml)"
 
@@ -27,7 +28,8 @@ msgstr "Quantité (ml)"
 msgid "Cradle hold"
 msgstr "Position de la madone"
 
-#: src/components/EventEntry.js:51 src/components/EventForm.js:51
+#: src/components/EventEntry.js:51
+#: src/components/EventForm.js:51
 #: src/pages/HomePage.js:109
 msgid "Create"
 msgstr "Créer"
@@ -40,7 +42,8 @@ msgstr "Position de la madone inversée"
 msgid "Dashboard"
 msgstr "Tableau de board"
 
-#: src/App.js:45 src/pages/DashboardPage.js:100
+#: src/App.js:45
+#: src/pages/DashboardPage.js:100
 msgid "Diaper"
 msgstr "Couche"
 
@@ -52,15 +55,18 @@ msgstr "Fin"
 msgid "Fallen asleep"
 msgstr "Endormi(e)"
 
-#: src/App.js:55 src/pages/DashboardPage.js:118
+#: src/App.js:55
+#: src/pages/DashboardPage.js:118
 msgid "Food"
 msgstr "Nourriture"
 
-#: src/components/MeasurementForm.js:80 src/components/MeasurementForm.js:88
+#: src/components/MeasurementForm.js:80
+#: src/components/MeasurementForm.js:88
 msgid "Head Circumference in cm"
 msgstr "Tour de tête (cm)"
 
-#: src/components/MeasurementForm.js:64 src/components/MeasurementForm.js:72
+#: src/components/MeasurementForm.js:64
+#: src/components/MeasurementForm.js:72
 msgid "Height in cm"
 msgstr "Taille (cm)"
 
@@ -76,7 +82,8 @@ msgstr "Position koala"
 msgid "Laid-back"
 msgstr "Demi-assise"
 
-#: src/components/NursingEntry.js:56 src/components/NursingForm.js:59
+#: src/components/NursingEntry.js:56
+#: src/components/NursingForm.js:59
 msgid "Left"
 msgstr "À gauche"
 
@@ -88,7 +95,8 @@ msgstr "Déconnexion"
 msgid "Lying"
 msgstr "Couchée sur le côté"
 
-#: src/App.js:60 src/pages/DashboardPage.js:124
+#: src/App.js:60
+#: src/pages/DashboardPage.js:124
 msgid "Measurement"
 msgstr "Mensurations"
 
@@ -108,7 +116,8 @@ msgstr "Nouvelle note"
 msgid "Now"
 msgstr "Maintenant"
 
-#: src/App.js:40 src/pages/DashboardPage.js:106
+#: src/App.js:40
+#: src/pages/DashboardPage.js:106
 msgid "Nursing"
 msgstr "Allaitement"
 
@@ -136,7 +145,8 @@ msgstr "Couleur du caca"
 msgid "Position"
 msgstr "Position"
 
-#: src/components/NursingEntry.js:56 src/components/NursingForm.js:66
+#: src/components/NursingEntry.js:56
+#: src/components/NursingForm.js:66
 msgid "Right"
 msgstr "À droite"
 
@@ -152,7 +162,8 @@ msgstr "Sauvegarde"
 msgid "Side"
 msgstr "Côté"
 
-#: src/App.js:50 src/pages/DashboardPage.js:112
+#: src/App.js:50
+#: src/pages/DashboardPage.js:112
 msgid "Sleep"
 msgstr "Sommeil"
 
@@ -160,14 +171,18 @@ msgstr "Sommeil"
 msgid "Start"
 msgstr "Début"
 
-#: src/components/DiaperForm.js:112 src/components/FoodForm.js:82
-#: src/components/MeasurementForm.js:102 src/components/NursingForm.js:105
-#: src/components/NursingForm.js:121 src/components/SleepForm.js:27
+#: src/components/DiaperForm.js:112
+#: src/components/FoodForm.js:82
+#: src/components/MeasurementForm.js:102
+#: src/components/NursingForm.js:105
+#: src/components/NursingForm.js:121
+#: src/components/SleepForm.js:27
 #: src/components/SleepForm.js:43
 msgid "Time"
 msgstr "Temps"
 
-#: src/components/DiaperForm.js:106 src/components/FoodForm.js:76
+#: src/components/DiaperForm.js:106
+#: src/components/FoodForm.js:76
 #: src/components/MeasurementForm.js:96
 msgid "Timestamp"
 msgstr "Cachet"
@@ -188,7 +203,8 @@ msgstr "Type"
 msgid "Wake Up"
 msgstr "S'est réveillé(e)"
 
-#: src/components/MeasurementForm.js:48 src/components/MeasurementForm.js:56
+#: src/components/MeasurementForm.js:48
+#: src/components/MeasurementForm.js:56
 msgid "Weight in g"
 msgstr "Poids (g)"
 
