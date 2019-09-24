@@ -1,6 +1,6 @@
 {
   "name": "baby-tracker",
-  "version": "1.5.3",
+  "version": "1.5.4",
   "main": "server.js",
   "author": "Mike Barkmin",
   "license": "MIT",
