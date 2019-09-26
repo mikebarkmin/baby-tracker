@@ -20,7 +20,7 @@ function EventsPage({ FormComponent, EntryComponent, socketPrefix }) {
         setEvents(d.events);
       }
     });
-  }, [socket, socketPrefix]);
+  }, [socket, socket.connected, socketPrefix]);
 
   useSocket(`${socketPrefix}/created`, d => {
     if (d.event) {
