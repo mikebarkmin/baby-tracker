@@ -16,13 +16,17 @@ function EventsPage({ FormComponent, EntryComponent, socketPrefix }) {
   const socket = useSocket();
   useEffect(() => {
     socket.emit(`${socketPrefix}/get`, d => {
-      setEvents(d.events || []);
+      if (d.events) {
+        setEvents(d.events);
+      }
     });
   }, [socket, socketPrefix]);
 
   useSocket(`${socketPrefix}/created`, d => {
-    const newEvents = [d.event, ...events];
-    setEvents(sortEvents(newEvents));
+    if (d.event) {
+      const newEvents = [d.event, ...events];
+      setEvents(sortEvents(newEvents));
+    }
   });
 
   useSocket(`${socketPrefix}/updated`, d => {
