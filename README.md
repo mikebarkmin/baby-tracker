@@ -62,6 +62,9 @@ Please add your questions as GitHub issue: [Baby-Tracker Feature Requests and Bu
 Fork https://github.com/mikebarkmin/baby-tracker.git
 git clone https://github.com/{yourusername}/baby-tracker.git
 cd baby-tracker
+cd client
+yarn install
+cd ..
 docker-compose up
 Submit a pull request
 ```
