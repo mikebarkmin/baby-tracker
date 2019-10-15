@@ -27,6 +27,6 @@
     "babel-eslint": "10.0.3",
     "babel-plugin-transform-node-env-inline": "0.4.3",
     "eslint": "6.5.1",
-    "nodemon": "1.19.3"
+    "nodemon": "1.19.4"
   }
 }
