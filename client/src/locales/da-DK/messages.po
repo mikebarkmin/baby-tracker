@@ -1,0 +1,219 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2019-09-22 09:06+0200\n"
+"Mime-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: en-US\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: src/components/DiaperEntry.js:35
+msgid "?"
+msgstr "?"
+
+#: src/components/FoodForm.js:61
+#: src/components/FoodForm.js:69
+msgid "Amount in ml"
+msgstr "Mængde i ml"
+
+#: src/pages/NursingPage.js:16
+msgid "Cradle hold"
+msgstr "Vugge hold"
+
+#: src/components/EventEntry.js:51
+#: src/components/EventForm.js:51
+#: src/pages/HomePage.js:125
+msgid "Create"
+msgstr "Opret"
+
+#: src/pages/NursingPage.js:36
+msgid "Cross Cradle hold"
+msgstr "Krydsvugge hold"
+
+#: src/App.js:35
+msgid "Dashboard"
+msgstr "Oversigt"
+
+#: src/App.js:45
+#: src/pages/DashboardPage.js:100
+msgid "Diaper"
+msgstr "Ble"
+
+#: src/components/NursingForm.js:115
+msgid "End"
+msgstr "Afslut"
+
+#: src/components/SleepForm.js:21
+msgid "Fallen asleep"
+msgstr "Faldet i søvn"
+
+#: src/App.js:55
+#: src/pages/DashboardPage.js:118
+msgid "Food"
+msgstr "Mad"
+
+#: src/components/MeasurementForm.js:80
+#: src/components/MeasurementForm.js:88
+msgid "Head Circumference in cm"
+msgstr "Hovedomkreds i cm"
+
+#: src/components/MeasurementForm.js:64
+#: src/components/MeasurementForm.js:72
+msgid "Height in cm"
+msgstr "Højde i cm"
+
+#: src/pages/HomePage.js:95
+msgid "ID"
+msgstr "ID"
+
+#: src/pages/NursingPage.js:41
+msgid "Koala hold"
+msgstr "Koala hold"
+
+#: src/pages/NursingPage.js:26
+msgid "Laid-back"
+msgstr "Tilbagelænet"
+
+#: src/components/NursingEntry.js:56
+#: src/components/NursingForm.js:59
+msgid "Left"
+msgstr "Venstre"
+
+#: src/components/Navigation.js:93
+msgid "Logout"
+msgstr "Logud"
+
+#: src/pages/NursingPage.js:21
+msgid "Lying"
+msgstr "Liggende"
+
+#: src/App.js:60
+#: src/pages/DashboardPage.js:124
+msgid "Measurement"
+msgstr "Mål"
+
+#: src/pages/HomePage.js:119
+msgid "Name"
+msgstr "Navn"
+
+#: src/pages/HomePage.js:109
+msgid "New Baby"
+msgstr "Ny baby"
+
+#: src/components/EventForm.js:50
+msgid "New Entry"
+msgstr "Opret ny"
+
+#: src/components/Form.js:119
+msgid "Now"
+msgstr "Nu"
+
+#: src/App.js:40
+#: src/pages/DashboardPage.js:106
+msgid "Nursing"
+msgstr "Amning"
+
+#: src/pages/HomePage.js:102
+msgid "Open"
+msgstr "Åben"
+
+#: src/components/DiaperEntry.js:40
+msgid "Pee"
+msgstr "Tis"
+
+#: src/components/DiaperEntry.js:38
+msgid "Pee and Poop"
+msgstr "Tis og afføring"
+
+#: src/components/DiaperEntry.js:42
+msgid "Poop"
+msgstr "Afføring"
+
+#: src/components/DiaperForm.js:83
+msgid "Poop Color"
+msgstr "Afføringens farve"
+
+#: src/components/NursingForm.js:72
+msgid "Position"
+msgstr "Stilling"
+
+#: src/components/NursingEntry.js:56
+#: src/components/NursingForm.js:66
+msgid "Right"
+msgstr "Højre"
+
+#: src/pages/NursingPage.js:31
+msgid "Rugby ball hold"
+msgstr "Rugbybold hold"
+
+#: src/components/EventInlineForm.js:39
+msgid "Save"
+msgstr "Gem"
+
+#: src/components/NursingForm.js:51
+msgid "Side"
+msgstr "Side"
+
+#: src/App.js:50
+#: src/pages/DashboardPage.js:112
+msgid "Sleep"
+msgstr "Søvn"
+
+#: src/components/NursingForm.js:99
+msgid "Start"
+msgstr "Start"
+
+#: src/components/DiaperForm.js:112
+#: src/components/FoodForm.js:83
+#: src/components/MeasurementForm.js:102
+#: src/components/NursingForm.js:105
+#: src/components/NursingForm.js:121
+#: src/components/SleepForm.js:27
+#: src/components/SleepForm.js:43
+msgid "Time"
+msgstr "Tid"
+
+#: src/components/DiaperForm.js:106
+#: src/components/FoodForm.js:77
+#: src/components/MeasurementForm.js:96
+msgid "Timestamp"
+msgstr "Tidsstempel"
+
+#: src/pages/DashboardPage.js:94
+msgid "Today"
+msgstr "I dag"
+
+#: src/pages/HomePage.js:78
+msgid "Track Baby"
+msgstr "Spor baby"
+
+#: src/components/FoodForm.js:43
+msgid "Type"
+msgstr "Type"
+
+#: src/components/SleepForm.js:37
+msgid "Wake Up"
+msgstr "Vågnet op"
+
+#: src/components/MeasurementForm.js:48
+#: src/components/MeasurementForm.js:56
+msgid "Weight in g"
+msgstr "Vøgt i g"
+
+#: src/components/NursingEntry.js:57
+msgid "for"
+msgstr "for"
+
+#: src/components/FoodEntry.js:41
+msgid "of"
+msgstr "af"
+
+#: src/components/Summary.js:50
+msgid "{0} ago"
+msgstr "{0} siden"
