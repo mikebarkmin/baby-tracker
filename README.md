@@ -49,6 +49,8 @@ yarn locale:add {languagecode}
 yarn locale:extract
 Edit client/src/locale/{languagecode}/messages.po
 yarn locale:compile
+Update client/src/locales/catalogs.js
+Update client/src/hooks/useLocale.js
 Submit a pull request
 ```
 
