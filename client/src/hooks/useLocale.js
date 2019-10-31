@@ -14,6 +14,10 @@ const useLocale = () => {
       locale = 'deDE';
       dateLocale = de;
       break;
+    case 'da':
+    case 'da-DK':
+      locale = 'daDK';
+      dateLocale = dk;
     case 'en-GB':
       locale = 'enUS';
       dateLocale = enGB;
