@@ -1,4 +1,4 @@
-import { de, enGB, enUS, enCA, fr } from 'date-fns/locale';
+import { de, dk, enGB, enUS, enCA, fr } from 'date-fns/locale';
 
 const useLocale = () => {
   let locale;
