@@ -46,7 +46,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "7.7.5",
+    "@babel/core": "7.7.7",
     "@lingui/cli": "2.9.0",
     "@lingui/macro": "2.9.0",
     "babel-core": "7.0.0-bridge.0"
