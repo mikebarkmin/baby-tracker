@@ -45,6 +45,17 @@ function NursingEntry({
   const position = positions.find(p => p.id === breastPosition) || {};
   const name = position.name || '?';
 
+  let distance = null;
+
+  try {
+    const from = new Date(end);
+    const to = new Date(date);
+    distance = formatDistanceStrict(from, to, {
+      unit: 'minute',
+      locale: dateLocale
+    });
+  } catch (err) {}
+
   return (
     <>
       <EventEntry>
@@ -54,11 +65,7 @@ function NursingEntry({
             <Type>
               <Trans id={name} /> (
               {breastLeft ? <Trans>Left</Trans> : <Trans>Right</Trans>}){' '}
-              <Trans>for</Trans>{' '}
-              {formatDistanceStrict(new Date(end), new Date(date), {
-                unit: 'minute',
-                locale: dateLocale
-              })}
+              <Trans>for</Trans> {distance}
             </Type>
           </EventDetails>
           <EventDate date={date} />
