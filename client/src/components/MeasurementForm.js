@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { I18n } from '@lingui/react';
 import { Trans, t } from '@lingui/macro';
 import PropTypes from 'prop-types';
