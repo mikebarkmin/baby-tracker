@@ -22,6 +22,16 @@ function EventsPage({ FormComponent, EntryComponent, socketPrefix }) {
     });
   }, [socket, socket.connected, socketPrefix]);
 
+  socket.on('reconnect', () => {
+    setTimeout(() => {
+      socket.emit(`${socketPrefix}/get`, d => {
+        if (d.events) {
+          setEvents(d.events);
+        }
+      });
+    }, 2000);
+  });
+
   useSocket(`${socketPrefix}/created`, d => {
     if (d.event) {
       const newEvents = [d.event, ...events];

@@ -76,6 +76,16 @@ function BabyJoin() {
     }
   }, [baby, setBaby, socket]);
 
+  socket.on('reconnect', () => {
+    if (baby !== null) {
+      socket.emit('baby/join', baby.shortId, d => {
+        if (d.msg === 'baby not found') {
+          setBaby(null);
+        }
+      });
+    }
+  });
+
   return null;
 }
 
