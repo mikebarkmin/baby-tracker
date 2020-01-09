@@ -34,6 +34,7 @@ At the moment these activities can be tracked:
 ## Translations
 
 [:de:](https://raw.githubusercontent.com/mikebarkmin/baby-tracker/master/client/src/locales/de-DE/messages.po) [:fr:](https://raw.githubusercontent.com/mikebarkmin/baby-tracker/master/client/src/locales/fr/messages.po) [:us:](https://raw.githubusercontent.com/mikebarkmin/baby-tracker/master/client/src/locales/en-US/messages.po)
+[🇩🇰](https://raw.githubusercontent.com/mikebarkmin/baby-tracker/master/client/src/locales/da-DK/messages.po)
 
 To correct a translation simply edit the corresponding message.po file.
 
