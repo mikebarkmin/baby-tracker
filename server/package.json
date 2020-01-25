@@ -17,7 +17,7 @@
     "mongoose": "5.8.9",
     "shortid": "2.2.15",
     "socket.io": "2.3.0",
-    "validator": "11.1.0"
+    "validator": "12.2.0"
   },
   "devDependencies": {
     "@babel/cli": "7.8.3",
