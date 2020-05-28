@@ -19,7 +19,7 @@
     "react-scripts": "3.4.1",
     "react-spring": "8.0.27",
     "socket.io-client": "2.3.0",
-    "styled-components": "4.4.1"
+    "styled-components": "5.1.1"
   },
   "scripts": {
     "start": "REACT_APP_SERVER=http://0.0.0.0:8080 react-scripts start",
