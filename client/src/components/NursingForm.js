@@ -8,7 +8,7 @@ import {
   Label,
   Toggle,
   IconToggle,
-  DatePicker
+  DatePicker,
 } from './Form';
 import Flex from './Flex';
 import unknownIcon from '../icons/unknown.svg';
@@ -23,7 +23,7 @@ const PositionName = styled.span`
 `;
 
 function NursingForm({ onChange, values }) {
-  const { date, end, breastLeft, breastPosition } = values;
+  const { date, end, breast, breastPosition } = values;
 
   function handleDateChange(date) {
     onChange({ ...values, date });
@@ -33,8 +33,8 @@ function NursingForm({ onChange, values }) {
     onChange({ ...values, end });
   }
 
-  function setBreastLeft(breastLeft) {
-    onChange({ ...values, breastLeft });
+  function setBreast(breast) {
+    onChange({ ...values, breast });
   }
 
   function setBreastPosition(breastPosition) {
@@ -52,18 +52,25 @@ function NursingForm({ onChange, values }) {
         </Label>
         <Flex wrap="wrap" justifyContent="flex-end" spacing={5}>
           <Toggle
-            onClick={() => setBreastLeft(true)}
-            active={breastLeft}
+            onClick={() => setBreast('left')}
+            active={breast === 'left'}
             type="button"
           >
             <Trans>Left</Trans>
           </Toggle>
           <Toggle
-            onClick={() => setBreastLeft(false)}
-            active={!breastLeft}
+            onClick={() => setBreast('right')}
+            active={breast === 'right'}
             type="button"
           >
             <Trans>Right</Trans>
+          </Toggle>
+          <Toggle
+            onClick={() => setBreast('both')}
+            active={breast === 'both'}
+            type="button"
+          >
+            <Trans>Both</Trans>
           </Toggle>
         </Flex>
       </FormElement>
@@ -76,7 +83,7 @@ function NursingForm({ onChange, values }) {
             <Trans id={name} />
           </PositionName>
           <Flex wrap="wrap" justifyContent="flex-end" spacing={5}>
-            {positions.map(p => (
+            {positions.map((p) => (
               <IconToggle
                 key={p.id}
                 src={p.img}
@@ -132,7 +139,7 @@ function NursingForm({ onChange, values }) {
 
 NursingForm.propTypes = {
   onChange: PropTypes.func,
-  values: PropTypes.object
+  values: PropTypes.object,
 };
 
 NursingForm.defaultProps = {
@@ -141,8 +148,8 @@ NursingForm.defaultProps = {
     date: new Date(),
     end: new Date(),
     breastLeft: false,
-    breastPosition: null
-  }
+    breastPosition: null,
+  },
 };
 
 export default NursingForm;

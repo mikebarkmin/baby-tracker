@@ -3,7 +3,7 @@
     "origin": [
       [
         "src/components/NursingEntry.js",
-        56
+        68
       ]
     ]
   },
@@ -11,7 +11,15 @@
     "origin": [
       [
         "src/components/NursingEntry.js",
-        56
+        70
+      ]
+    ]
+  },
+  "Both": {
+    "origin": [
+      [
+        "src/components/NursingEntry.js",
+        72
       ]
     ]
   },
@@ -19,7 +27,7 @@
     "origin": [
       [
         "src/components/NursingEntry.js",
-        57
+        74
       ]
     ]
   }

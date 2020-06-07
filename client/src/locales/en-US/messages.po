@@ -22,6 +22,11 @@ msgstr "?"
 msgid "Amount in ml"
 msgstr "Amount in ml"
 
+#: src/components/NursingEntry.js:72
+#: src/components/NursingForm.js:73
+msgid "Both"
+msgstr "Both"
+
 #: src/pages/NursingPage.js:16
 msgid "Cradle hold"
 msgstr "Cradle hold"
@@ -45,7 +50,7 @@ msgstr "Dashboard"
 msgid "Diaper"
 msgstr "Diaper"
 
-#: src/components/NursingForm.js:115
+#: src/components/NursingForm.js:122
 msgid "End"
 msgstr "End"
 
@@ -80,7 +85,7 @@ msgstr "Koala hold"
 msgid "Laid-back"
 msgstr "Laid-back"
 
-#: src/components/NursingEntry.js:56
+#: src/components/NursingEntry.js:68
 #: src/components/NursingForm.js:59
 msgid "Left"
 msgstr "Left"
@@ -139,11 +144,11 @@ msgstr "Poop"
 msgid "Poop Color"
 msgstr "Poop Color"
 
-#: src/components/NursingForm.js:72
+#: src/components/NursingForm.js:79
 msgid "Position"
 msgstr "Position"
 
-#: src/components/NursingEntry.js:56
+#: src/components/NursingEntry.js:70
 #: src/components/NursingForm.js:66
 msgid "Right"
 msgstr "Right"
@@ -165,15 +170,15 @@ msgstr "Side"
 msgid "Sleep"
 msgstr "Sleep"
 
-#: src/components/NursingForm.js:99
+#: src/components/NursingForm.js:106
 msgid "Start"
 msgstr "Start"
 
 #: src/components/DiaperForm.js:112
 #: src/components/FoodForm.js:83
 #: src/components/MeasurementForm.js:102
-#: src/components/NursingForm.js:105
-#: src/components/NursingForm.js:121
+#: src/components/NursingForm.js:112
+#: src/components/NursingForm.js:128
 #: src/components/SleepForm.js:27
 #: src/components/SleepForm.js:43
 msgid "Time"
@@ -206,7 +211,7 @@ msgstr "Wake Up"
 msgid "Weight in g"
 msgstr "Weight in g"
 
-#: src/components/NursingEntry.js:57
+#: src/components/NursingEntry.js:74
 msgid "for"
 msgstr "for"
 

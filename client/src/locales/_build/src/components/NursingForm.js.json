@@ -23,11 +23,19 @@
       ]
     ]
   },
+  "Both": {
+    "origin": [
+      [
+        "src/components/NursingForm.js",
+        73
+      ]
+    ]
+  },
   "Position": {
     "origin": [
       [
         "src/components/NursingForm.js",
-        72
+        79
       ]
     ]
   },
@@ -35,7 +43,7 @@
     "origin": [
       [
         "src/components/NursingForm.js",
-        99
+        106
       ]
     ]
   },
@@ -43,11 +51,11 @@
     "origin": [
       [
         "src/components/NursingForm.js",
-        105
+        112
       ],
       [
         "src/components/NursingForm.js",
-        121
+        128
       ]
     ]
   },
@@ -55,7 +63,7 @@
     "origin": [
       [
         "src/components/NursingForm.js",
-        115
+        122
       ]
     ]
   }

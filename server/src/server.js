@@ -25,7 +25,7 @@ if (process.env.NODE_ENV === 'production') {
 server.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}`);
 
-io.on('connection', socket => {
+io.on('connection', (socket) => {
   modules.baby.handler(socket);
   modules.diaper.handler(socket);
   modules.food.handler(socket);
@@ -33,7 +33,7 @@ io.on('connection', socket => {
   modules.sleep.handler(socket);
   modules.measurement.handler(socket);
 
-  socket.on('error', error => {
+  socket.on('error', (error) => {
     console.error(error);
   });
 });

@@ -6,10 +6,10 @@ export const schema = new Schema(
     babyId: String,
     type: String,
     amount: Number,
-    date: { type: Date, default: Date.now }
+    date: { type: Date, default: Date.now },
   },
   {
-    timestamps: true
+    timestamps: true,
   }
 );
 
@@ -17,7 +17,7 @@ export const Model = model('Food', schema);
 
 export function handler(socket) {
   eventHandler(socket, 'food', Model);
-  socket.on('food/getTypes', function(callback) {
+  socket.on('food/getTypes', function (callback) {
     if (!socket.baby) {
       callback({ msg: 'no baby' });
       return;
@@ -25,10 +25,10 @@ export function handler(socket) {
     const babyId = socket.baby._id;
     Model.find({ babyId })
       .distinct('type')
-      .then(docs => {
+      .then((docs) => {
         callback({ msg: 'success', types: docs });
       })
-      .catch(e => {
+      .catch((e) => {
         callback({ msg: e });
       });
   });
@@ -37,5 +37,5 @@ export function handler(socket) {
 export default {
   schema,
   Model,
-  handler
+  handler,
 };

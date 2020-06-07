@@ -6,11 +6,15 @@ export const schema = new Schema(
     babyId: String,
     date: { type: Date, default: Date.now },
     end: Date,
-    breastLeft: Boolean,
-    breastPosition: Number
+    breast: {
+      type: String,
+      enum: ['right', 'left', 'both'],
+      default: 'right',
+    },
+    breastPosition: Number,
   },
   {
-    timestamps: true
+    timestamps: true,
   }
 );
 
@@ -19,9 +23,8 @@ export const Model = model('Nursing', schema);
 export function handler(socket) {
   eventHandler(socket, 'nursing', Model);
 }
-
 export default {
   schema,
   Model,
-  handler
+  handler,
 };

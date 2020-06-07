@@ -7,10 +7,10 @@ export const schema = new Schema(
     date: { type: Date, default: Date.now },
     pee: Boolean,
     poop: Boolean,
-    poopColor: Number
+    poopColor: Number,
   },
   {
-    timestamps: true
+    timestamps: true,
   }
 );
 
@@ -23,5 +23,5 @@ export function handler(socket) {
 export default {
   schema,
   Model,
-  handler
+  handler,
 };

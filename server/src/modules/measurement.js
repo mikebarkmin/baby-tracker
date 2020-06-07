@@ -7,10 +7,10 @@ export const schema = new Schema(
     date: { type: Date, default: Date.now },
     height: Number,
     weight: Number,
-    headCircumference: Number
+    headCircumference: Number,
   },
   {
-    timestamps: true
+    timestamps: true,
   }
 );
 
@@ -23,6 +23,5 @@ export function handler(socket) {
 export default {
   schema,
   Model,
-  handler
+  handler,
 };
-

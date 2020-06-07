@@ -9,7 +9,7 @@ import {
   EventContent,
   EventEdit,
   EventDelete,
-  EventDetails
+  EventDetails,
 } from './EventEntry';
 import NursingForm from './NursingForm';
 import EventInlineForm from './EventInlineForm';
@@ -24,11 +24,11 @@ const Type = styled.span`
 
 function NursingEntry({
   breastPosition,
-  breastLeft,
+  breast,
   date,
   end,
   onDelete,
-  onUpdate
+  onUpdate,
 }) {
   const [edit, setEdit] = useState(false);
   const { dateLocale } = useLocale();
@@ -42,7 +42,7 @@ function NursingEntry({
     onUpdate(values);
   }
 
-  const position = positions.find(p => p.id === breastPosition) || {};
+  const position = positions.find((p) => p.id === breastPosition) || {};
   const name = position.name || '?';
 
   let distance = null;
@@ -52,7 +52,7 @@ function NursingEntry({
     const to = new Date(date);
     distance = formatDistanceStrict(from, to, {
       unit: 'minute',
-      locale: dateLocale
+      locale: dateLocale,
     });
   } catch (err) {}
 
@@ -64,8 +64,14 @@ function NursingEntry({
           <EventDetails>
             <Type>
               <Trans id={name} /> (
-              {breastLeft ? <Trans>Left</Trans> : <Trans>Right</Trans>}){' '}
-              <Trans>for</Trans> {distance}
+              {breast === 'left' ? (
+                <Trans>Left</Trans>
+              ) : breast === 'right' ? (
+                <Trans>Right</Trans>
+              ) : (
+                <Trans>Both</Trans>
+              )}
+              ) <Trans>for</Trans> {distance}
             </Type>
           </EventDetails>
           <EventDate date={date} />
@@ -79,9 +85,9 @@ function NursingEntry({
           FormContent={NursingForm}
           initalValues={{
             end: new Date(end),
-            breastLeft,
+            breast,
             breastPosition,
-            date: new Date(date)
+            date: new Date(date),
           }}
         />
       )}
