@@ -18,6 +18,7 @@ function connectDB() {
         );
         setTimeout(connectDB, 5000);
       } else {
+        console.info('==== MIGRATIONS ====');
         migrations.up();
       }
     }
