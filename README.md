@@ -29,6 +29,8 @@ At the moment these activities can be tracked:
 * Sleep
 * Measurement
 
+The data can be exported by clicking export in the bottom right-hand corner.
+
 [Screenshots at the features page](https://github.com/mikebarkmin/baby-tracker/wiki/Features)
 
 ## Translations
