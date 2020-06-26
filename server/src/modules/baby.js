@@ -1,6 +1,11 @@
 import { Schema, model } from 'mongoose';
 import isEmail from 'validator/lib/isEmail';
 import shortid from 'shortid';
+import diaper from './diaper';
+import nursing from './nursing';
+import sleep from './sleep';
+import food from './food';
+import measurement from './measurement';
 
 const familyNames = [
   'Funkelndes Hippo',
@@ -12,7 +17,7 @@ const familyNames = [
   'Schöne Fuchs',
   'Gewitzte Frosch',
   'Knurrige Hamster',
-  'Weise Panda'
+  'Weise Panda',
 ];
 
 const roomsNames = {};
@@ -39,7 +44,7 @@ function getFreeName(room) {
 function freeName(room, name) {
   let roomNames = roomsNames[room];
   if (roomNames) {
-    roomsNames[room] = roomNames.filter(n => n !== name);
+    roomsNames[room] = roomNames.filter((n) => n !== name);
   }
 }
 
@@ -50,16 +55,16 @@ export const schema = new Schema(
       type: String,
       validate: {
         validator: isEmail,
-        message: 'invalid email'
-      }
+        message: 'invalid email',
+      },
     },
     shortId: {
       type: String,
-      default: shortid.generate
-    }
+      default: shortid.generate,
+    },
   },
   {
-    timestamps: true
+    timestamps: true,
   }
 );
 
@@ -69,21 +74,21 @@ export function handler(socket) {
   socket.baby = null;
   socket.name = null;
 
-  socket.on('baby/create', function(name, callback) {
+  socket.on('baby/create', function (name, callback) {
     const baby = new Model({ name });
     baby
       .save()
-      .then(doc => {
+      .then((doc) => {
         socket.emit('baby/new', { baby: doc });
         callback({ msg: 'success', baby: doc });
       })
-      .catch(e => {
+      .catch((e) => {
         console.log(e);
         callback({ msg: e });
       });
   });
 
-  socket.on('baby/get', function(callback) {
+  socket.on('baby/get', function (callback) {
     if (socket.baby !== null) {
       callback({ msg: 'success', baby: socket.baby });
     } else {
@@ -91,13 +96,13 @@ export function handler(socket) {
     }
   });
 
-  socket.on('baby/update', function(baby) {
+  socket.on('baby/update', function (baby) {
     if (socket.baby !== null) {
       socket.baby = {
         ...socket.baby,
         ...baby,
         ...socket.baby._id,
-        ...socket.baby.shortId
+        ...socket.baby.shortId,
       };
       socket.baby.save().then(() => {
         socket
@@ -107,9 +112,9 @@ export function handler(socket) {
     }
   });
 
-  socket.on('baby/join', function(shortId, callback) {
+  socket.on('baby/join', function (shortId, callback) {
     Model.findOne({ shortId })
-      .then(baby => {
+      .then((baby) => {
         socket.baby = baby;
         socket.name = getFreeName(shortId);
         socket.join(baby.shortId);
@@ -121,14 +126,31 @@ export function handler(socket) {
       });
   });
 
-  socket.on('baby/leave', function(callback) {
+  socket.on('baby/leave', function (callback) {
     if (socket.baby !== null) {
       socket.leave(socket.baby.shortId);
     }
     callback({ msg: 'success' });
   });
 
-  socket.on('disconnect', function() {
+  socket.on('baby/export', async function (callback) {
+    if (socket.baby !== null) {
+      const babyId = socket.baby._id;
+      const data = {
+        baby: socket.baby,
+        diaper: await diaper.Model.find({ babyId }),
+        food: await food.Model.find({ babyId }),
+        measurement: await measurement.Model.find({ babyId }),
+        nursing: await nursing.Model.find({ babyId }),
+        sleep: await sleep.Model.find({ babyId }),
+      };
+      callback({ msg: 'success', data });
+    } else {
+      callback({ msg: 'you need to join a baby first.' });
+    }
+  });
+
+  socket.on('disconnect', function () {
     if (socket.baby !== null) {
       socket.to(socket.baby.shortId).emit('baby/leaved', { name: socket.name });
       freeName(socket.baby.shortId, socket.name);
@@ -139,5 +161,5 @@ export function handler(socket) {
 export default {
   schema,
   Model,
-  handler
+  handler,
 };
