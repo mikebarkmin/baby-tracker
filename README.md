@@ -40,19 +40,19 @@ To correct a translation simply edit the corresponding message.po file.
 
 To add a new language you can do this:
 
-```
-Fork https://github.com/mikebarkmin/baby-tracker.git
+```sh
+# Fork https://github.com/mikebarkmin/baby-tracker.git
 git clone https://github.com/{your_username}/baby-tracker.git
 cd baby-tracker.git
 git checkout -b languages/{languagecode}
 yarn install
 yarn locale:add {languagecode}
 yarn locale:extract
-Edit client/src/locale/{languagecode}/messages.po
+# Edit client/src/locale/{languagecode}/messages.po
 yarn locale:compile
 Update client/src/locales/catalogs.js
 Update client/src/hooks/useLocale.js
-Submit a pull request
+# Submit a pull request
 ```
 
 ## [Feature Requests and Bugs](https://github.com/mikebarkmin/baby-tracker/issues)
@@ -61,26 +61,37 @@ Please add your questions as GitHub issue: [Baby-Tracker Feature Requests and Bu
 
 ## Develop
 
-```
-Fork https://github.com/mikebarkmin/baby-tracker.git
+```sh
+# Fork https://github.com/mikebarkmin/baby-tracker.git
 git clone https://github.com/{yourusername}/baby-tracker.git
 cd baby-tracker
 cd client
 yarn install
 cd ..
 docker-compose up
-Submit a pull request
+# Submit a pull request
 ```
 
 ## Deploy
 
-```
+```sh
 wget https://github.com/mikebarkmin/baby-tracker/raw/master/docker-compose.prod.yml
 wget https://github.com/mikebarkmin/baby-tracker/raw/master/mongo-init.js
-Change username and password to something other than server/test
+# Change username and password to something other than server/test
 docker-compose -f docker-compose.prod.yml up
-Visit localhost:8080
+# Visit localhost:8080
 ```
+
+## Backup & Restore
+
+```sh
+# backup
+docker-compose -f docker-compose.prod.yml exec -T mongo sh -c 'mongodump --username=root --password=example --archive' > db.dump.archive
+
+# restore
+docker-compose -f docker-compose.prod.yml exec -T mongo sh -c 'mongorestore --username=root --password=example --archive' < db.dump.archive
+```
+
 
 ## License
 
