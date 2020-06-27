@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     margin: 0;
+    background: ${(props) => props.theme.background};
   }
   h1 {
     font-size: 2em;
