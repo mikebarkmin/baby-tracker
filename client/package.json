@@ -11,15 +11,15 @@
     "date-fns": "2.14.0",
     "polished": "3.6.5",
     "react": "16.13.1",
-    "react-autosuggest": "^10.0.2",
-    "react-datepicker": "^3.0.0",
+    "react-autosuggest": "10.0.2",
+    "react-datepicker": "3.0.0",
     "react-dom": "16.13.1",
     "react-router": "5.2.0",
     "react-router-dom": "5.2.0",
     "react-scripts": "3.4.1",
     "react-spring": "8.0.27",
     "socket.io-client": "2.3.0",
-    "styled-components": "^5.1.1"
+    "styled-components": "5.1.1"
   },
   "scripts": {
     "start": "REACT_APP_SERVER=http://0.0.0.0:8080 react-scripts start",
