@@ -20,7 +20,7 @@ function MeasurementForm({ onChange, values }) {
         });
       }
     });
-  }, [socket]);
+  }, [socket, onChange, values]);
 
   function handleDateChange(date) {
     onChange({ ...values, date });
