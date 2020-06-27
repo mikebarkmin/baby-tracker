@@ -9,7 +9,7 @@ import Flex from './Flex';
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
-  background: whitesmoke;
+  background: ${(props) => props.theme.background};
   border-radius: 4px;
   margin-top: 8px;
 `;
@@ -22,6 +22,8 @@ export const FormElement = styled.div`
 
 export const FormContent = styled.div`
   padding: 8px;
+  color: ${(props) => props.theme.text};
+  background: ${(props) => props.theme.paper};
 `;
 
 export const FormHeader = styled.div`
@@ -29,7 +31,8 @@ export const FormHeader = styled.div`
   align-items: center;
   cursor: pointer;
   padding: 8px;
-  background: lightgrey;
+  background: ${(props) => props.theme.secondary};
+  color: ${(props) => props.theme.secondaryText};
   border-radius: 4px 4px 0 0;
 `;
 
@@ -47,14 +50,15 @@ export const FormHeaderIcon = styled.img`
 export const FormSubmit = styled.button`
   border: 0;
   outline: 0;
-  background: ${props => props.theme.primary};
+  background: ${(props) => props.theme.primary};
+  color: ${(props) => props.theme.primaryText};
   border-radius: 0 0 4px 4px;
   padding: 8px;
   font-weight: bold;
   cursor: pointer;
 
   &:hover {
-    background: ${props => darken(0.1, props.theme.primary)};
+    background: ${(props) => darken(0.1, props.theme.primary)};
   }
 `;
 
@@ -63,9 +67,10 @@ export const Input = styled.input`
   padding: 0 25px;
   height: 55px;
   outline: none;
-  border: 2px solid lightgrey;
+  border: 2px solid ${(props) => props.theme.warmNeutral};
   font-weight: bold;
-  color: grey;
+  color: ${(props) => props.theme.warmNeutral};
+  background: ${(props) => props.theme.paper};
   line-height: 1.2;
   box-sizing: border-box;
 `;
@@ -73,22 +78,21 @@ export const Input = styled.input`
 export const Toggle = styled.button`
   height: 50px;
   cursor: pointer;
-  border: 2px solid lightgrey;
+  border: 2px solid ${(props) => props.theme.warmNeutral};
   text-transform: uppercase;
   font-weight: bold;
-  color: grey;
+  color: ${(props) => props.theme.warmNeutral};
   border-radius: 4px;
-  background-color: white;
-
-  background-color: ${props => (props.active ? props.theme.primary : null)};
+  background-color: ${(props) =>
+    props.active ? props.theme.primary : props.theme.paper};
 `;
 
 export const IconToggle = styled(Toggle)`
-  background-image: url(${props => props.src});
+  background-image: url(${(props) => props.src});
   background-size: cover;
   background-position: center;
   width: 50px;
-  background-color: ${props => (props.active ? props.theme.primary : null)};
+  background-color: ${(props) => (props.active ? props.theme.primary : null)};
 `;
 
 export const Label = styled.label`

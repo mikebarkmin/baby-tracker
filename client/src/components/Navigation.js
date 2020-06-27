@@ -12,11 +12,11 @@ import theme from '../theme';
 const NavUl = styled.ul`
   padding: 0;
   margin: 0;
-  max-width: ${props => props.theme.maxWidth}px;
+  max-width: ${(props) => props.theme.maxWidth}px;
   margin-left: auto;
   margin-right: auto;
 
-  @media (min-width: ${props => props.theme.mobileWidth}px) {
+  @media (min-width: ${(props) => props.theme.mobileWidth}px) {
     display: flex;
     padding: 1rem;
     justify-content: center;
@@ -24,7 +24,7 @@ const NavUl = styled.ul`
 `;
 
 const NavLi = styled.li`
-  @media (min-width: ${props => props.theme.mobileWidth}px) {
+  @media (min-width: ${(props) => props.theme.mobileWidth}px) {
     padding: 0;
     margin: 0 1rem;
   }
@@ -36,19 +36,19 @@ const NavLink = styled(Link)`
   align-items: center;
   padding: 0.5rem;
   padding-right: 1rem;
-  color: white;
+  color: ${(props) => props.theme.secondaryText};
   font-weight: bold;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid ${(props) => darken(0.1, props.theme.secondary)};
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   text-decoration: none;
 
   &.active {
-    background: ${props => darken(0.2, props.theme.secondary)};
+    background: ${(props) => darken(0.2, props.theme.secondary)};
   }
 
   &:hover {
-    background: ${props => darken(0.1, props.theme.secondary)};
+    background: ${(props) => darken(0.1, props.theme.secondary)};
   }
 `;
 
@@ -60,7 +60,7 @@ const NavIcon = styled.img`
 
 const Navigation = ({ links }) => {
   const {
-    location: { pathname }
+    location: { pathname },
   } = useRouter();
   const [showMenu, setShowMenu] = useState(false);
   const [, , deleteBaby] = useLocalStorage('baby');

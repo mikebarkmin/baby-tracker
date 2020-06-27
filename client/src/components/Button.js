@@ -12,8 +12,9 @@ const Button = styled.button`
 
   border-style: solid;
   border-width: 2px;
-  color: ${props => props.theme.neutral};
-  border-color: ${props => props.theme.neutral};
+  color: ${(props) => props.theme.warmNeutral};
+  border-color: ${(props) => props.theme.warmNeutral};
+  background: ${(props) => props.theme.paper};
 
   & > img {
     height: 25px;
@@ -28,31 +29,32 @@ const Button = styled.button`
 export const IconButton = styled(Button)`
   border-radius: 50%;
   padding: 0.25em;
+  background: ${(props) => props.theme.paper};
 `;
 
 export const PrimaryButton = styled(Button)`
-  color: ${props => props.theme.primary};
-  border-color: ${props => props.theme.primary};
+  color: ${(props) => props.theme.primary};
+  border-color: ${(props) => props.theme.primary};
 `;
 
 export const SecondaryButton = styled(Button)`
-  color: ${props => props.theme.secondary};
-  border-color: ${props => props.theme.secondary};
+  color: ${(props) => props.theme.secondary};
+  border-color: ${(props) => props.theme.secondary};
 `;
 
 export const SuccessButton = styled(Button)`
-  color: ${props => props.theme.success};
-  border-color: ${props => props.theme.success};
+  color: ${(props) => props.theme.success};
+  border-color: ${(props) => props.theme.success};
 `;
 
 export const WarningButton = styled(Button)`
-  color: ${props => props.theme.warning};
-  border-color: ${props => props.theme.warning};
+  color: ${(props) => props.theme.warning};
+  border-color: ${(props) => props.theme.warning};
 `;
 
 export const ErrorButton = styled(Button)`
-  color: ${props => props.theme.error};
-  border-color: ${props => props.theme.error};
+  color: ${(props) => props.theme.error};
+  border-color: ${(props) => props.theme.error};
 `;
 
 export default Button;

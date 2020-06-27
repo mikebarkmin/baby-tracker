@@ -16,9 +16,11 @@ import { I18nProvider } from '@lingui/react';
 import SocketProvider from './components/SocketProvider';
 import useLocalStorage from './hooks/useLocalStorage';
 import useSocket from './hooks/useSocket';
-import theme from './theme';
+import useDark from './hooks/useDark';
+import { light as lightTheme, dark as darkTheme } from './theme';
 import GlobalStyle from './GlobalStyle';
 import Footer from './components/Footer';
+import DarkToggle from './components/DarkToggle';
 
 import dashboardIcon from './icons/dashboard.svg';
 import nursingIcon from './icons/nursing.svg';
@@ -34,33 +36,33 @@ const links = [
   {
     name: t`Dashboard`,
     url: '/',
-    icon: dashboardIcon
+    icon: dashboardIcon,
   },
   {
     name: t`Nursing`,
     url: '/nursing',
-    icon: nursingIcon
+    icon: nursingIcon,
   },
   {
     name: t`Diaper`,
     url: '/diaper',
-    icon: diaperIcon
+    icon: diaperIcon,
   },
   {
     name: t`Sleep`,
     url: '/sleep',
-    icon: sleepIcon
+    icon: sleepIcon,
   },
   {
     name: t`Food`,
     url: '/food',
-    icon: foodIcon
+    icon: foodIcon,
   },
   {
     name: t`Measurement`,
     url: '/measurement',
-    icon: measurementIcon
-  }
+    icon: measurementIcon,
+  },
 ];
 
 function BabyJoin() {
@@ -68,7 +70,7 @@ function BabyJoin() {
   const socket = useSocket();
   useEffect(() => {
     if (baby !== null) {
-      socket.emit('baby/join', baby.shortId, d => {
+      socket.emit('baby/join', baby.shortId, (d) => {
         if (d.msg === 'baby not found') {
           setBaby(null);
         }
@@ -78,7 +80,7 @@ function BabyJoin() {
 
   socket.on('reconnect', () => {
     if (baby !== null) {
-      socket.emit('baby/join', baby.shortId, d => {
+      socket.emit('baby/join', baby.shortId, (d) => {
         if (d.msg === 'baby not found') {
           setBaby(null);
         }
@@ -96,8 +98,9 @@ const Root = styled.div`
   left: 0;
   right: 0;
   overflow-y: auto;
+  background: ${(props) => props.theme.background};
 
-  @media (max-width: ${props => props.theme.mobileWidth}px) {
+  @media (max-width: ${(props) => props.theme.mobileWidth}px) {
     top: 52px;
   }
 `;
@@ -113,10 +116,11 @@ const Main = styled.main`
 
 function App() {
   const [baby] = useLocalStorage('baby', null);
+  const [dark] = useDark();
   const { locale } = useLocale();
   return (
     <I18nProvider language={locale} catalogs={catalogs}>
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={dark ? darkTheme : lightTheme}>
         <HookedRouter>
           <GlobalStyle />
           <Root>
@@ -124,6 +128,7 @@ function App() {
               {baby !== null ? (
                 <>
                   <BabyJoin />
+                  <DarkToggle />
                   <Navigation links={links} />
                   <Main>
                     <Switch>

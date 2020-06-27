@@ -11,7 +11,7 @@ import {
   FormHeader,
   FormContent,
   FormHeaderTitle,
-  FormSubmit
+  FormSubmit,
 } from '../components/Form';
 import logoIcon from '../icons/logo.svg';
 
@@ -25,13 +25,14 @@ const Root = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: ${(props) => props.theme.background};
 `;
 
-const getSuggestionValue = suggestion => suggestion;
+const getSuggestionValue = (suggestion) => suggestion;
 
-const renderSuggestion = suggestion => <span>{suggestion}</span>;
+const renderSuggestion = (suggestion) => <span>{suggestion}</span>;
 
-const renderInputComponent = inputProps => <Input {...inputProps} />;
+const renderInputComponent = (inputProps) => <Input {...inputProps} />;
 
 function HomePage() {
   const [shortId, setShortId] = useState('');
@@ -41,7 +42,7 @@ function HomePage() {
   const [recent, setRecent] = useLocalStorage('recent', []);
 
   function handleJoinBaby() {
-    socket.emit('baby/join', shortId, function(res) {
+    socket.emit('baby/join', shortId, function (res) {
       if (res.msg === 'success') {
         setBaby(res.baby);
         if (recent.indexOf(shortId) === -1) {
@@ -52,7 +53,7 @@ function HomePage() {
   }
 
   function handleCreateBaby() {
-    socket.emit('baby/create', name, function(res) {
+    socket.emit('baby/create', name, function (res) {
       if (res.msg === 'success') {
         setShortId(res.baby.shortId);
       }
@@ -92,7 +93,7 @@ function HomePage() {
                   inputProps={{
                     value: shortId,
                     onChange: handleShortIdChange,
-                    placeholder: `${i18n._(t`ID`)}...`
+                    placeholder: `${i18n._(t`ID`)}...`,
                   }}
                 />
               )}

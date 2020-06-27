@@ -11,9 +11,10 @@ const Container = styled.div`
   width: 350px;
   flex-direction: column;
   cursor: pointer;
-  background-color: ${props => props.bg || 'white'};
+  color: ${(props) => props.theme.text};
+  background-color: ${(props) => props.bg || props.theme.paper};
   padding: 8px;
-  border: 2px solid lightgrey;
+  border: 2px solid ${(props) => props.theme.warmNeutral};
   border-radius: 4px;
   margin: 10px;
 `;
@@ -49,7 +50,7 @@ function Summary({ name, icon, color, summary, onClick }) {
           <Last>
             <Trans>
               {formatDistanceToNow(new Date(summary.last.date), {
-                locale: dateLocale
+                locale: dateLocale,
               })}{' '}
               ago
             </Trans>
@@ -66,8 +67,8 @@ Summary.propTypes = {
   color: PropTypes.string,
   summary: PropTypes.shape({
     number: PropTypes.number,
-    last: PropTypes.object
-  })
+    last: PropTypes.object,
+  }),
 };
 
 export default Summary;

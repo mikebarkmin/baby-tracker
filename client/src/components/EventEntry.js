@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Trans } from '@lingui/macro';
 import { formatRelative } from 'date-fns';
-import { lighten } from 'polished';
+import { lighten, darken } from 'polished';
 import Button, { IconButton } from './Button';
 import deleteIcon from '../icons/delete.svg';
 import editIcon from '../icons/edit.svg';
@@ -14,8 +14,14 @@ export const EventEntry = styled.div`
   align-items: center;
   border-radius: 4px;
 
+  color: ${(props) => props.theme.text};
+  background: ${(props) => props.theme.paper};
+
   &:hover {
-    background: ${props => lighten(0.4, props.theme.secondary)};
+    background: ${(props) =>
+      props.theme.type === 'light'
+        ? lighten(0.4, props.theme.secondary)
+        : darken(0.1, props.theme.secondary)};
   }
 `;
 
@@ -34,19 +40,19 @@ export const EventIcon = styled.img`
 
 export const EventDetails = styled.div``;
 
-export const EventEdit = props => (
+export const EventEdit = (props) => (
   <IconButton {...props}>
     <img alt="edit" src={editIcon} />
   </IconButton>
 );
 
-export const EventDelete = props => (
+export const EventDelete = (props) => (
   <IconButton {...props}>
     <img alt="Delete" src={deleteIcon} />
   </IconButton>
 );
 
-export const EventCreate = props => (
+export const EventCreate = (props) => (
   <Button {...props}>
     <Trans>Create</Trans>
   </Button>

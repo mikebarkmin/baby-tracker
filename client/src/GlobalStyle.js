@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { darken } from 'polished';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -172,8 +173,9 @@ const GlobalStyle = createGlobalStyle`
     position: absolute;
     top: 51px;
     width: 100%;
-    border: 2px solid lightgrey;
-    background-color: whitesmoke;
+    color: ${(props) => props.theme.text};
+    border: 2px solid ${(props) => props.theme.warmNeutral};
+    background-color: ${(props) => props.theme.paper};
     font-weight: 300;
     font-size: 16px;
     border-bottom-left-radius: 4px;
@@ -193,8 +195,10 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .react-autosuggest__suggestion--highlighted {
-    background-color: #ddd;
+    background-color: ${(props) => darken(0.1, props.theme.paper)};
   }
+
+
 `;
 
 export default GlobalStyle;

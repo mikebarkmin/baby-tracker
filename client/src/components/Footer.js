@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { lighten } from 'polished';
+import { lighten, darken } from 'polished';
 import packageJSON from '../../package.json';
 import useLocalStorage from '../hooks/useLocalStorage';
 import useSocket from '../hooks/useSocket';
@@ -21,7 +21,10 @@ const Root = styled.footer`
   bottom: 0px;
   height: 30px;
   right: 0px;
-  background-color: ${(props) => lighten(0.5, props.theme.secondary)};
+  background-color: ${(props) =>
+    props.theme.type === 'light'
+      ? lighten(0.5, props.theme.secondary)
+      : darken(0.1, props.theme.secondary)};
   align-items: center;
   font-size: 0.8rem;
   color: grey;
