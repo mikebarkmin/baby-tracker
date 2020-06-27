@@ -1,6 +1,6 @@
 {
   "name": "baby-tracker",
-  "version": "1.5.6",
+  "version": "1.7.1",
   "main": "server.js",
   "author": "Mike Barkmin",
   "license": "MIT",
@@ -26,7 +26,10 @@
     "@babel/preset-env": "7.10.3",
     "babel-eslint": "10.1.0",
     "babel-plugin-transform-node-env-inline": "0.4.3",
-    "eslint": "6.8.0",
-    "nodemon": "1.19.4"
-  }
+    "eslint": "^7.3.1",
+    "nodemon": "^2.0.4"
+  },
+  "browserslist": [
+    "node 12"
+  ]
 }

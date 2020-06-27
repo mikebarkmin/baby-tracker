@@ -11,7 +11,7 @@ services:
       - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
 
   server:
-    image: mikebarkmin/baby-tracker:1.7.0
+    image: mikebarkmin/baby-tracker:1.7.1
     environment:
       DATABASE_URL: mongodb://server:test@mongo:27017/baby-tracker
 
