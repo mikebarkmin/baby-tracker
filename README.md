@@ -31,6 +31,8 @@ At the moment these activities can be tracked:
 
 The data can be exported by clicking export in the bottom right-hand corner.
 
+You can also activate a dark mode.
+
 [Screenshots at the features page](https://github.com/mikebarkmin/baby-tracker/wiki/Features)
 
 ## Translations
