@@ -6,7 +6,7 @@
   "license": "MIT",
   "dependencies": {
     "@lingui/react": "2.9.1",
-    "@sentry/browser": "5.21.4",
+    "@sentry/browser": "5.22.0",
     "axios": "0.20.0",
     "date-fns": "2.15.0",
     "polished": "3.6.5",
