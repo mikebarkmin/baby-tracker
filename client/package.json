@@ -9,7 +9,7 @@
     "@sentry/browser": "5.22.3",
     "axios": "0.20.0",
     "date-fns": "2.16.0",
-    "polished": "3.6.5",
+    "polished": "3.6.6",
     "react": "16.13.1",
     "react-autosuggest": "10.0.2",
     "react-datepicker": "3.1.3",
