@@ -8,7 +8,7 @@
     "@lingui/react": "2.9.1",
     "@sentry/browser": "5.22.3",
     "axios": "0.20.0",
-    "date-fns": "2.16.0",
+    "date-fns": "2.16.1",
     "polished": "3.6.6",
     "react": "16.13.1",
     "react-autosuggest": "10.0.2",
