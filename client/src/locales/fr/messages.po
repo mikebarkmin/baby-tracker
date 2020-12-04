@@ -33,9 +33,9 @@ msgstr "Tous les deux"
 msgid "Cradle hold"
 msgstr "Position de la madone"
 
-#: src/components/EventEntry.js:51
+#: src/components/EventEntry.js:57
 #: src/components/EventForm.js:51
-#: src/pages/HomePage.js:125
+#: src/pages/HomePage.js:126
 msgid "Create"
 msgstr "Créer"
 
@@ -43,11 +43,11 @@ msgstr "Créer"
 msgid "Cross Cradle hold"
 msgstr "Position de la madone inversée"
 
-#: src/App.js:35
+#: src/App.js:37
 msgid "Dashboard"
 msgstr "Tableau de board"
 
-#: src/App.js:45
+#: src/App.js:47
 #: src/pages/DashboardPage.js:100
 msgid "Diaper"
 msgstr "Couche"
@@ -60,7 +60,7 @@ msgstr "Fin"
 msgid "Fallen asleep"
 msgstr "Endormi(e)"
 
-#: src/App.js:55
+#: src/App.js:57
 #: src/pages/DashboardPage.js:118
 msgid "Food"
 msgstr "Nourriture"
@@ -75,7 +75,7 @@ msgstr "Tour de tête (cm)"
 msgid "Height in cm"
 msgstr "Taille (cm)"
 
-#: src/pages/HomePage.js:95
+#: src/pages/HomePage.js:96
 msgid "ID"
 msgstr "Code d'identité"
 
@@ -100,16 +100,16 @@ msgstr "Déconnexion"
 msgid "Lying"
 msgstr "Couchée sur le côté"
 
-#: src/App.js:60
+#: src/App.js:62
 #: src/pages/DashboardPage.js:124
 msgid "Measurement"
 msgstr "Mensurations"
 
-#: src/pages/HomePage.js:119
+#: src/pages/HomePage.js:120
 msgid "Name"
 msgstr "Nom"
 
-#: src/pages/HomePage.js:109
+#: src/pages/HomePage.js:110
 msgid "New Baby"
 msgstr "Nouveau bébé"
 
@@ -117,16 +117,16 @@ msgstr "Nouveau bébé"
 msgid "New Entry"
 msgstr "Nouvelle note"
 
-#: src/components/Form.js:119
+#: src/components/Form.js:123
 msgid "Now"
 msgstr "Maintenant"
 
-#: src/App.js:40
+#: src/App.js:42
 #: src/pages/DashboardPage.js:106
 msgid "Nursing"
 msgstr "Allaitement"
 
-#: src/pages/HomePage.js:102
+#: src/pages/HomePage.js:103
 msgid "Open"
 msgstr "Ouvre"
 
@@ -167,7 +167,7 @@ msgstr "Sauvegarde"
 msgid "Side"
 msgstr "Côté"
 
-#: src/App.js:50
+#: src/App.js:52
 #: src/pages/DashboardPage.js:112
 msgid "Sleep"
 msgstr "Sommeil"
@@ -196,7 +196,7 @@ msgstr "Cachet"
 msgid "Today"
 msgstr "Aujourd'hui"
 
-#: src/pages/HomePage.js:78
+#: src/pages/HomePage.js:79
 msgid "Track Baby"
 msgstr "Tiens à jour ton bébé"
 
@@ -213,6 +213,10 @@ msgstr "S'est réveillé(e)"
 msgid "Weight in g"
 msgstr "Poids (g)"
 
+#: src/components/Footer.js:89
+msgid "export"
+msgstr ""
+
 #: src/components/NursingEntry.js:74
 msgid "for"
 msgstr "pour"
@@ -221,6 +225,10 @@ msgstr "pour"
 msgid "of"
 msgstr "de"
 
-#: src/components/Summary.js:50
+#: src/pages/EventsPage.js:100
+msgid "showAll"
+msgstr ""
+
+#: src/components/Summary.js:51
 msgid "{0} ago"
 msgstr "Il y a {0}"

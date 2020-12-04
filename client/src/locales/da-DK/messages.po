@@ -31,9 +31,9 @@ msgstr "Begge"
 msgid "Cradle hold"
 msgstr "Vugge hold"
 
-#: src/components/EventEntry.js:51
+#: src/components/EventEntry.js:57
 #: src/components/EventForm.js:51
-#: src/pages/HomePage.js:125
+#: src/pages/HomePage.js:126
 msgid "Create"
 msgstr "Opret"
 
@@ -41,11 +41,11 @@ msgstr "Opret"
 msgid "Cross Cradle hold"
 msgstr "Krydsvugge hold"
 
-#: src/App.js:35
+#: src/App.js:37
 msgid "Dashboard"
 msgstr "Oversigt"
 
-#: src/App.js:45
+#: src/App.js:47
 #: src/pages/DashboardPage.js:100
 msgid "Diaper"
 msgstr "Ble"
@@ -58,7 +58,7 @@ msgstr "Afslut"
 msgid "Fallen asleep"
 msgstr "Faldet i søvn"
 
-#: src/App.js:55
+#: src/App.js:57
 #: src/pages/DashboardPage.js:118
 msgid "Food"
 msgstr "Mad"
@@ -73,7 +73,7 @@ msgstr "Hovedomkreds i cm"
 msgid "Height in cm"
 msgstr "Højde i cm"
 
-#: src/pages/HomePage.js:95
+#: src/pages/HomePage.js:96
 msgid "ID"
 msgstr "ID"
 
@@ -98,16 +98,16 @@ msgstr "Logud"
 msgid "Lying"
 msgstr "Liggende"
 
-#: src/App.js:60
+#: src/App.js:62
 #: src/pages/DashboardPage.js:124
 msgid "Measurement"
 msgstr "Mål"
 
-#: src/pages/HomePage.js:119
+#: src/pages/HomePage.js:120
 msgid "Name"
 msgstr "Navn"
 
-#: src/pages/HomePage.js:109
+#: src/pages/HomePage.js:110
 msgid "New Baby"
 msgstr "Ny baby"
 
@@ -115,16 +115,16 @@ msgstr "Ny baby"
 msgid "New Entry"
 msgstr "Opret ny"
 
-#: src/components/Form.js:119
+#: src/components/Form.js:123
 msgid "Now"
 msgstr "Nu"
 
-#: src/App.js:40
+#: src/App.js:42
 #: src/pages/DashboardPage.js:106
 msgid "Nursing"
 msgstr "Amning"
 
-#: src/pages/HomePage.js:102
+#: src/pages/HomePage.js:103
 msgid "Open"
 msgstr "Åben"
 
@@ -165,7 +165,7 @@ msgstr "Gem"
 msgid "Side"
 msgstr "Side"
 
-#: src/App.js:50
+#: src/App.js:52
 #: src/pages/DashboardPage.js:112
 msgid "Sleep"
 msgstr "Søvn"
@@ -194,7 +194,7 @@ msgstr "Tidsstempel"
 msgid "Today"
 msgstr "I dag"
 
-#: src/pages/HomePage.js:78
+#: src/pages/HomePage.js:79
 msgid "Track Baby"
 msgstr "Spor baby"
 
@@ -211,6 +211,10 @@ msgstr "Vågnet op"
 msgid "Weight in g"
 msgstr "Vøgt i g"
 
+#: src/components/Footer.js:89
+msgid "export"
+msgstr ""
+
 #: src/components/NursingEntry.js:74
 msgid "for"
 msgstr "for"
@@ -219,6 +223,10 @@ msgstr "for"
 msgid "of"
 msgstr "af"
 
-#: src/components/Summary.js:50
+#: src/pages/EventsPage.js:100
+msgid "showAll"
+msgstr ""
+
+#: src/components/Summary.js:51
 msgid "{0} ago"
 msgstr "{0} siden"

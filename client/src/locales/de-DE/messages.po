@@ -31,9 +31,9 @@ msgstr "Beide"
 msgid "Cradle hold"
 msgstr "Wiegehaltung"
 
-#: src/components/EventEntry.js:51
+#: src/components/EventEntry.js:57
 #: src/components/EventForm.js:51
-#: src/pages/HomePage.js:125
+#: src/pages/HomePage.js:126
 msgid "Create"
 msgstr "Erstellen"
 
@@ -41,11 +41,11 @@ msgstr "Erstellen"
 msgid "Cross Cradle hold"
 msgstr "Kreuzwiegehaltung"
 
-#: src/App.js:35
+#: src/App.js:37
 msgid "Dashboard"
 msgstr "Dashboard"
 
-#: src/App.js:45
+#: src/App.js:47
 #: src/pages/DashboardPage.js:100
 msgid "Diaper"
 msgstr "Windel"
@@ -58,7 +58,7 @@ msgstr "Ende"
 msgid "Fallen asleep"
 msgstr "Eingeschlafen"
 
-#: src/App.js:55
+#: src/App.js:57
 #: src/pages/DashboardPage.js:118
 msgid "Food"
 msgstr "Essen"
@@ -73,7 +73,7 @@ msgstr "Kopfumfang in cm"
 msgid "Height in cm"
 msgstr "Größe in cm"
 
-#: src/pages/HomePage.js:95
+#: src/pages/HomePage.js:96
 msgid "ID"
 msgstr "ID"
 
@@ -98,16 +98,16 @@ msgstr "Abmelden"
 msgid "Lying"
 msgstr "Liegend"
 
-#: src/App.js:60
+#: src/App.js:62
 #: src/pages/DashboardPage.js:124
 msgid "Measurement"
 msgstr "Messung"
 
-#: src/pages/HomePage.js:119
+#: src/pages/HomePage.js:120
 msgid "Name"
 msgstr "Name"
 
-#: src/pages/HomePage.js:109
+#: src/pages/HomePage.js:110
 msgid "New Baby"
 msgstr "Neues Baby"
 
@@ -115,16 +115,16 @@ msgstr "Neues Baby"
 msgid "New Entry"
 msgstr "Neuer Eintrag"
 
-#: src/components/Form.js:119
+#: src/components/Form.js:123
 msgid "Now"
 msgstr "Jetzt"
 
-#: src/App.js:40
+#: src/App.js:42
 #: src/pages/DashboardPage.js:106
 msgid "Nursing"
 msgstr "Stillen"
 
-#: src/pages/HomePage.js:102
+#: src/pages/HomePage.js:103
 msgid "Open"
 msgstr "Öffnen"
 
@@ -165,7 +165,7 @@ msgstr "Speichern"
 msgid "Side"
 msgstr "Seite"
 
-#: src/App.js:50
+#: src/App.js:52
 #: src/pages/DashboardPage.js:112
 msgid "Sleep"
 msgstr "Schlafen"
@@ -194,7 +194,7 @@ msgstr "Uhrzeit"
 msgid "Today"
 msgstr "Heute"
 
-#: src/pages/HomePage.js:78
+#: src/pages/HomePage.js:79
 msgid "Track Baby"
 msgstr "Baby tracken"
 
@@ -211,6 +211,10 @@ msgstr "Aufgewacht"
 msgid "Weight in g"
 msgstr "Gewicht in g"
 
+#: src/components/Footer.js:89
+msgid "export"
+msgstr "Exportieren"
+
 #: src/components/NursingEntry.js:74
 msgid "for"
 msgstr "für"
@@ -219,6 +223,10 @@ msgstr "für"
 msgid "of"
 msgstr "von"
 
-#: src/components/Summary.js:50
+#: src/pages/EventsPage.js:100
+msgid "showAll"
+msgstr "alle Einträge anzeigen"
+
+#: src/components/Summary.js:51
 msgid "{0} ago"
 msgstr "Zuletzt vor {0}"
