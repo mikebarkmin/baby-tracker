@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import useSocket from '../hooks/useSocket';
 import EventForm from '../components/EventForm';
 import Flex from '../components/Flex';
+import Button from '../components/Button';
+import { Trans } from '@lingui/macro';
 
 export function sortEvents(events) {
   const newEvents = [...events];
@@ -72,6 +74,14 @@ function EventsPage({ FormComponent, EntryComponent, socketPrefix }) {
     });
   }
 
+  function handleGetAll() {
+    socket.emit(`${socketPrefix}/getall`, d => {
+      if (d.events) {
+        setEvents(d.events);
+      }
+    });
+  }
+
   return (
     <>
       <EventForm onSubmit={handleCreate} FormContent={FormComponent} />
@@ -86,6 +96,9 @@ function EventsPage({ FormComponent, EntryComponent, socketPrefix }) {
           />
         ))}
       </Flex>
+      <Button onClick={handleGetAll}>
+        <Trans>showAll</Trans>
+      </Button>
     </>
   );
 }
