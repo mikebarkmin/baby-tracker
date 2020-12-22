@@ -7,7 +7,7 @@
   "dependencies": {
     "@lingui/react": "2.9.2",
     "@sentry/browser": "5.29.2",
-    "axios": "0.21.0",
+    "axios": "0.21.1",
     "date-fns": "2.16.1",
     "polished": "3.6.7",
     "react": "16.14.0",
