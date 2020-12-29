@@ -10,10 +10,6 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/ac5730932862bc3cfa78/maintainability)](https://codeclimate.com/github/mikebarkmin/baby-tracker/maintainability)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmikebarkmin%2Fbaby-tracker.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmikebarkmin%2Fbaby-tracker?ref=badge_shield)
 
-## Demo
-
-You can use the demo baby (ID: ZTeEim9l). Visit [www.babytracker.live](https://www.babytracker.live) and open the baby with the id (ZTeEim9l). Toy around and if you like it you can create a unique id for your own baby.
-
 ## Features
 
 Create a new baby by entering his/her name in the designated field. Afterwards
