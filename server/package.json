@@ -16,7 +16,7 @@
     "express": "4.17.1",
     "mongoose": "5.11.6",
     "shortid": "2.2.16",
-    "socket.io": "2.3.0",
+    "socket.io": "2.4.0",
     "validator": "11.1.0"
   },
   "devDependencies": {
