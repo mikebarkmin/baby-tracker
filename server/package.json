@@ -27,7 +27,7 @@
     "babel-eslint": "10.1.0",
     "babel-plugin-transform-node-env-inline": "0.4.3",
     "eslint": "7.19.0",
-    "nodemon": "2.0.6"
+    "nodemon": "2.0.7"
   },
   "browserslist": [
     "node 12"
