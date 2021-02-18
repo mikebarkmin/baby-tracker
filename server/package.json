@@ -20,10 +20,10 @@
     "validator": "11.1.0"
   },
   "devDependencies": {
-    "@babel/cli": "7.12.16",
-    "@babel/core": "7.12.16",
-    "@babel/node": "7.12.16",
-    "@babel/preset-env": "7.12.16",
+    "@babel/cli": "7.12.17",
+    "@babel/core": "7.12.17",
+    "@babel/node": "7.12.17",
+    "@babel/preset-env": "7.12.17",
     "babel-eslint": "10.1.0",
     "babel-plugin-transform-node-env-inline": "0.4.3",
     "eslint": "7.20.0",
