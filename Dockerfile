@@ -1,4 +1,4 @@
-FROM node:12 as client
+FROM node:16 as client
 WORKDIR /usr/src/app
 ENV PATH /usr/src/app/node_modules/.bin:$PATH
 ENV REACT_APP_SERVER /
@@ -8,7 +8,7 @@ RUN npm install react-scripts@3.0.1 -g --silent
 COPY client /usr/src/app
 RUN npm run build
 
-FROM node:12 as server 
+FROM node:16 as server 
 WORKDIR /usr/src/app
 ENV PATH /usr/src/app/node_modules/.bin:$PATH
 ENV NODE_ENV production
@@ -19,7 +19,7 @@ COPY server /usr/src/app
 RUN npm run build
 
 
-FROM node:12
+FROM node:16
 
 # Create app directory
 WORKDIR /usr/src/app
