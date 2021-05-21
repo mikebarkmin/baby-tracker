@@ -1,11 +1,11 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2019-09-22 09:06+0200\n"
+"POT-Creation-Date: 2021-01-26 11:45-0600\n"
 "Mime-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
-"Language: en-US\n"
+"Language: zh-CMN\n"
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: \n"
@@ -20,58 +20,58 @@ msgstr "?"
 #: src/components/FoodForm.js:61
 #: src/components/FoodForm.js:69
 msgid "Amount in ml"
-msgstr "Mængde i ml"
+msgstr "毫升量"
 
 #: src/components/NursingEntry.js:72
 #: src/components/NursingForm.js:73
 msgid "Both"
-msgstr "Begge"
+msgstr "都"
 
 #: src/pages/NursingPage.js:16
 msgid "Cradle hold"
-msgstr "Vugge hold"
+msgstr "摇篮抱法"
 
 #: src/components/EventEntry.js:57
 #: src/components/EventForm.js:51
 #: src/pages/HomePage.js:126
 msgid "Create"
-msgstr "Opret"
+msgstr "创作"
 
 #: src/pages/NursingPage.js:36
 msgid "Cross Cradle hold"
-msgstr "Krydsvugge hold"
+msgstr "跨摇篮抱法"
 
 #: src/App.js:37
 msgid "Dashboard"
-msgstr "Oversigt"
+msgstr "信息中心"
 
 #: src/App.js:47
 #: src/pages/DashboardPage.js:100
 msgid "Diaper"
-msgstr "Ble"
+msgstr "尿布"
 
 #: src/components/NursingForm.js:122
 msgid "End"
-msgstr "Afslut"
+msgstr "结束"
 
 #: src/components/SleepForm.js:21
 msgid "Fallen asleep"
-msgstr "Faldet i søvn"
+msgstr "睡着了"
 
 #: src/App.js:57
 #: src/pages/DashboardPage.js:118
 msgid "Food"
-msgstr "Mad"
+msgstr "饭"
 
 #: src/components/MeasurementForm.js:80
 #: src/components/MeasurementForm.js:88
 msgid "Head Circumference in cm"
-msgstr "Hovedomkreds i cm"
+msgstr "头围 (厘米)"
 
 #: src/components/MeasurementForm.js:64
 #: src/components/MeasurementForm.js:72
 msgid "Height in cm"
-msgstr "Højde i cm"
+msgstr "身高 (厘米)"
 
 #: src/pages/HomePage.js:96
 msgid "ID"
@@ -79,104 +79,104 @@ msgstr "ID"
 
 #: src/pages/NursingPage.js:41
 msgid "Koala hold"
-msgstr "Koala hold"
+msgstr "考拉抱法"
 
 #: src/pages/NursingPage.js:26
 msgid "Laid-back"
-msgstr "Tilbagelænet"
+msgstr "靠的往后"
 
 #: src/components/NursingEntry.js:68
 #: src/components/NursingForm.js:59
 msgid "Left"
-msgstr "Venstre"
+msgstr "左"
 
 #: src/components/Navigation.js:93
 msgid "Logout"
-msgstr "Logud"
+msgstr "登出"
 
 #: src/pages/NursingPage.js:21
 msgid "Lying"
-msgstr "Liggende"
+msgstr "躺着"
 
 #: src/App.js:62
 #: src/pages/DashboardPage.js:124
 msgid "Measurement"
-msgstr "Mål"
+msgstr "测量"
 
 #: src/pages/HomePage.js:120
 msgid "Name"
-msgstr "Navn"
+msgstr "名字"
 
 #: src/pages/HomePage.js:110
 msgid "New Baby"
-msgstr "Ny baby"
+msgstr "新生儿"
 
 #: src/components/EventForm.js:50
 msgid "New Entry"
-msgstr "Opret ny"
+msgstr "新的条目"
 
 #: src/components/Form.js:123
 msgid "Now"
-msgstr "Nu"
+msgstr "现在"
 
 #: src/App.js:42
 #: src/pages/DashboardPage.js:106
 msgid "Nursing"
-msgstr "Amning"
+msgstr "哺乳"
 
 #: src/pages/HomePage.js:103
 msgid "Open"
-msgstr "Åben"
+msgstr "开"
 
 #: src/components/DiaperEntry.js:40
 msgid "Pee"
-msgstr "Tis"
+msgstr "尿"
 
 #: src/components/DiaperEntry.js:38
 msgid "Pee and Poop"
-msgstr "Tis og afføring"
+msgstr "尿和屎"
 
 #: src/components/DiaperEntry.js:42
 msgid "Poop"
-msgstr "Afføring"
+msgstr "屎"
 
 #: src/components/DiaperForm.js:83
 msgid "Poop Color"
-msgstr "Afføringens farve"
+msgstr "屎的颜色"
 
 #: src/components/NursingForm.js:79
 msgid "Position"
-msgstr "Stilling"
+msgstr "位置"
 
 #: src/components/NursingEntry.js:70
 #: src/components/NursingForm.js:66
 msgid "Right"
-msgstr "Højre"
+msgstr "右"
 
 #: src/pages/NursingPage.js:31
 msgid "Rugby ball hold"
-msgstr "Rugbybold hold"
+msgstr "橄榄球抱法"
 
 #: src/components/EventInlineForm.js:39
 msgid "Save"
-msgstr "Gem"
+msgstr "保存"
 
 #: src/pages/EventsPage.js:100
 msgid "Show all entries"
-msgstr "Vis alle poster"
+msgstr "显示所有条目"
 
 #: src/components/NursingForm.js:51
 msgid "Side"
-msgstr "Side"
+msgstr "侧面"
 
 #: src/App.js:52
 #: src/pages/DashboardPage.js:112
 msgid "Sleep"
-msgstr "Søvn"
+msgstr "睡觉"
 
 #: src/components/NursingForm.js:106
 msgid "Start"
-msgstr "Start"
+msgstr "开始"
 
 #: src/components/DiaperForm.js:112
 #: src/components/FoodForm.js:83
@@ -186,47 +186,47 @@ msgstr "Start"
 #: src/components/SleepForm.js:27
 #: src/components/SleepForm.js:43
 msgid "Time"
-msgstr "Tid"
+msgstr "时间"
 
 #: src/components/DiaperForm.js:106
 #: src/components/FoodForm.js:77
 #: src/components/MeasurementForm.js:96
 msgid "Timestamp"
-msgstr "Tidsstempel"
+msgstr "时间戳"
 
 #: src/pages/DashboardPage.js:94
 msgid "Today"
-msgstr "I dag"
+msgstr "今天"
 
 #: src/pages/HomePage.js:79
 msgid "Track Baby"
-msgstr "Spor baby"
+msgstr "跟踪宝宝"
 
 #: src/components/FoodForm.js:43
 msgid "Type"
-msgstr "Type"
+msgstr "类型"
 
 #: src/components/SleepForm.js:37
 msgid "Wake Up"
-msgstr "Vågnet op"
+msgstr "醒来"
 
 #: src/components/MeasurementForm.js:48
 #: src/components/MeasurementForm.js:56
 msgid "Weight in g"
-msgstr "Vøgt i g"
+msgstr "重量（克）"
 
 #: src/components/Footer.js:89
 msgid "export"
-msgstr "eksport"
+msgstr "导出"
 
 #: src/components/NursingEntry.js:74
 msgid "for"
-msgstr "for"
+msgstr "为"
 
 #: src/components/FoodEntry.js:41
 msgid "of"
-msgstr "af"
+msgstr "的"
 
 #: src/components/Summary.js:51
 msgid "{0} ago"
-msgstr "{0} siden"
+msgstr "{0} 前"

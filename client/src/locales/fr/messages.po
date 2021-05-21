@@ -163,6 +163,10 @@ msgstr "Façon ballon de rugby"
 msgid "Save"
 msgstr "Sauvegarde"
 
+#: src/pages/EventsPage.js:100
+msgid "Show all entries"
+msgstr "Afficher toutes les entrées"
+
 #: src/components/NursingForm.js:51
 msgid "Side"
 msgstr "Côté"
@@ -215,7 +219,7 @@ msgstr "Poids (g)"
 
 #: src/components/Footer.js:89
 msgid "export"
-msgstr ""
+msgstr "exportation"
 
 #: src/components/NursingEntry.js:74
 msgid "for"
@@ -224,10 +228,6 @@ msgstr "pour"
 #: src/components/FoodEntry.js:41
 msgid "of"
 msgstr "de"
-
-#: src/pages/EventsPage.js:100
-msgid "showAll"
-msgstr ""
 
 #: src/components/Summary.js:51
 msgid "{0} ago"

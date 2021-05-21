@@ -1,4 +1,4 @@
-import { de, da, enGB, enUS, enCA, fr } from 'date-fns/locale';
+import { de, da, enGB, enUS, enCA, fr, zhCN } from 'date-fns/locale';
 
 const useLocale = () => {
   let locale;
@@ -36,6 +36,9 @@ const useLocale = () => {
       locale = 'fr';
       dateLocale = fr;
       break;
+    case 'zh-CMN':
+      locale = 'zhCMN'
+      dateLocale = zhCN;
     default:
       locale = 'enUS';
       dateLocale = enUS;

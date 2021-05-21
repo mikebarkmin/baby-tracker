@@ -161,6 +161,10 @@ msgstr "Football-Haltung"
 msgid "Save"
 msgstr "Speichern"
 
+#: src/pages/EventsPage.js:100
+msgid "Show all entries"
+msgstr "Zeige alle Einträge"
+
 #: src/components/NursingForm.js:51
 msgid "Side"
 msgstr "Seite"
@@ -222,10 +226,6 @@ msgstr "für"
 #: src/components/FoodEntry.js:41
 msgid "of"
 msgstr "von"
-
-#: src/pages/EventsPage.js:100
-msgid "showAll"
-msgstr "alle Einträge anzeigen"
 
 #: src/components/Summary.js:51
 msgid "{0} ago"

@@ -161,6 +161,10 @@ msgstr "Rugby ball hold"
 msgid "Save"
 msgstr "Save"
 
+#: src/pages/EventsPage.js:100
+msgid "Show all entries"
+msgstr "Show all entries"
+
 #: src/components/NursingForm.js:51
 msgid "Side"
 msgstr "Side"
@@ -222,10 +226,6 @@ msgstr "for"
 #: src/components/FoodEntry.js:41
 msgid "of"
 msgstr "of"
-
-#: src/pages/EventsPage.js:100
-msgid "showAll"
-msgstr "show all entries"
 
 #: src/components/Summary.js:51
 msgid "{0} ago"
