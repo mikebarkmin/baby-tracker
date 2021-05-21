@@ -63,13 +63,13 @@ msgstr "Eingeschlafen"
 msgid "Food"
 msgstr "Essen"
 
-#: src/components/MeasurementForm.js:80
-#: src/components/MeasurementForm.js:88
+#: src/components/MeasurementForm.js:84
+#: src/components/MeasurementForm.js:92
 msgid "Head Circumference in cm"
 msgstr "Kopfumfang in cm"
 
-#: src/components/MeasurementForm.js:64
-#: src/components/MeasurementForm.js:72
+#: src/components/MeasurementForm.js:68
+#: src/components/MeasurementForm.js:76
 msgid "Height in cm"
 msgstr "Größe in cm"
 
@@ -161,6 +161,10 @@ msgstr "Football-Haltung"
 msgid "Save"
 msgstr "Speichern"
 
+#: src/pages/EventsPage.js:100
+msgid "Show all entries"
+msgstr "Zeige alle Einträge"
+
 #: src/components/NursingForm.js:51
 msgid "Side"
 msgstr "Seite"
@@ -176,7 +180,7 @@ msgstr "Start"
 
 #: src/components/DiaperForm.js:112
 #: src/components/FoodForm.js:83
-#: src/components/MeasurementForm.js:102
+#: src/components/MeasurementForm.js:106
 #: src/components/NursingForm.js:112
 #: src/components/NursingForm.js:128
 #: src/components/SleepForm.js:27
@@ -186,7 +190,7 @@ msgstr "Zeit"
 
 #: src/components/DiaperForm.js:106
 #: src/components/FoodForm.js:77
-#: src/components/MeasurementForm.js:96
+#: src/components/MeasurementForm.js:100
 msgid "Timestamp"
 msgstr "Uhrzeit"
 
@@ -206,14 +210,14 @@ msgstr "Typ"
 msgid "Wake Up"
 msgstr "Aufgewacht"
 
-#: src/components/MeasurementForm.js:48
-#: src/components/MeasurementForm.js:56
+#: src/components/MeasurementForm.js:52
+#: src/components/MeasurementForm.js:60
 msgid "Weight in g"
 msgstr "Gewicht in g"
 
 #: src/components/Footer.js:89
 msgid "export"
-msgstr ""
+msgstr "Exportieren"
 
 #: src/components/NursingEntry.js:74
 msgid "for"

@@ -63,13 +63,13 @@ msgstr "睡着了"
 msgid "Food"
 msgstr "饭"
 
-#: src/components/MeasurementForm.js:80
-#: src/components/MeasurementForm.js:88
+#: src/components/MeasurementForm.js:84
+#: src/components/MeasurementForm.js:92
 msgid "Head Circumference in cm"
 msgstr "头围 (厘米)"
 
-#: src/components/MeasurementForm.js:64
-#: src/components/MeasurementForm.js:72
+#: src/components/MeasurementForm.js:68
+#: src/components/MeasurementForm.js:76
 msgid "Height in cm"
 msgstr "身高 (厘米)"
 
@@ -161,6 +161,10 @@ msgstr "橄榄球抱法"
 msgid "Save"
 msgstr "保存"
 
+#: src/pages/EventsPage.js:100
+msgid "Show all entries"
+msgstr "显示所有条目"
+
 #: src/components/NursingForm.js:51
 msgid "Side"
 msgstr "侧面"
@@ -176,7 +180,7 @@ msgstr "开始"
 
 #: src/components/DiaperForm.js:112
 #: src/components/FoodForm.js:83
-#: src/components/MeasurementForm.js:102
+#: src/components/MeasurementForm.js:106
 #: src/components/NursingForm.js:112
 #: src/components/NursingForm.js:128
 #: src/components/SleepForm.js:27
@@ -186,7 +190,7 @@ msgstr "时间"
 
 #: src/components/DiaperForm.js:106
 #: src/components/FoodForm.js:77
-#: src/components/MeasurementForm.js:96
+#: src/components/MeasurementForm.js:100
 msgid "Timestamp"
 msgstr "时间戳"
 
@@ -206,8 +210,8 @@ msgstr "类型"
 msgid "Wake Up"
 msgstr "醒来"
 
-#: src/components/MeasurementForm.js:48
-#: src/components/MeasurementForm.js:56
+#: src/components/MeasurementForm.js:52
+#: src/components/MeasurementForm.js:60
 msgid "Weight in g"
 msgstr "重量（克）"
 

@@ -69,6 +69,23 @@ export function eventHandler(socket, socketPrefix, Model) {
     const babyId = socket.baby._id;
     Model.find({ babyId })
       .sort({ date: -1 })
+      .limit(30)
+      .then((docs) => {
+        callback({ msg: 'success', events: docs });
+      })
+      .catch((e) => {
+        callback({ msg: e });
+      });
+  });
+
+  socket.on(`${socketPrefix}/getall`, function (callback) {
+    if (!socket.baby) {
+      callback({ msg: 'no baby' });
+      return;
+    }
+    const babyId = socket.baby._id;
+    Model.find({ babyId })
+      .sort({ date: -1 })
       .then((docs) => {
         callback({ msg: 'success', events: docs });
       })
