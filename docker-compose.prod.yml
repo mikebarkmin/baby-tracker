@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 
 services:
   mongo:
@@ -11,7 +11,7 @@ services:
       - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
 
   server:
-    image: mikebarkmin/baby-tracker:1.8.0
+    image: mikebarkmin/baby-tracker:1.9.0
     environment:
       DATABASE_URL: mongodb://server:test@mongo:27017/baby-tracker
 
