@@ -72,7 +72,8 @@ function MeasurementEntry({
             height,
             weight,
             headCircumference,
-            date: new Date(date)
+            date: new Date(date),
+            preventMultipleLoadLatest: true
           }}
         />
       )}
