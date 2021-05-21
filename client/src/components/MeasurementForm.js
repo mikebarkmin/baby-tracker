@@ -10,13 +10,17 @@ function MeasurementForm({ onChange, values }) {
   const socket = useSocket();
 
   useEffect(() => {
+    if (values.preventMultipleLoadLatest) {
+      return;
+    }
     socket.emit('measurement/latest', d => {
       if (d && d.event) {
         onChange({
           ...values,
           height: d.event.height,
           weight: d.event.weight,
-          headCircumference: d.event.headCircumference
+          headCircumference: d.event.headCircumference,
+          preventMultipleLoadLatest: true
         });
       }
     });
