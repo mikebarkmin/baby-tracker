@@ -37,6 +37,7 @@ const useLocale = () => {
       dateLocale = fr;
       break;
     case 'zh-CMN':
+    case 'zh-CN':
       locale = 'zhCMN'
       dateLocale = zhCN;
     default:
