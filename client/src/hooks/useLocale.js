@@ -40,6 +40,7 @@ const useLocale = () => {
     case 'zh-CN':
       locale = 'zhCMN'
       dateLocale = zhCN;
+      break;
     default:
       locale = 'enUS';
       dateLocale = enUS;

@@ -35,7 +35,7 @@ msgstr "摇篮抱法"
 #: src/components/EventForm.js:51
 #: src/pages/HomePage.js:126
 msgid "Create"
-msgstr "创作"
+msgstr "创建"
 
 #: src/pages/NursingPage.js:36
 msgid "Cross Cradle hold"
@@ -61,7 +61,7 @@ msgstr "睡着了"
 #: src/App.js:57
 #: src/pages/DashboardPage.js:118
 msgid "Food"
-msgstr "饭"
+msgstr "吃饭"
 
 #: src/components/MeasurementForm.js:84
 #: src/components/MeasurementForm.js:92
@@ -113,7 +113,7 @@ msgstr "新生儿"
 
 #: src/components/EventForm.js:50
 msgid "New Entry"
-msgstr "新的条目"
+msgstr "新建条目"
 
 #: src/components/Form.js:123
 msgid "Now"
@@ -126,7 +126,7 @@ msgstr "哺乳"
 
 #: src/pages/HomePage.js:103
 msgid "Open"
-msgstr "开"
+msgstr "打开"
 
 #: src/components/DiaperEntry.js:40
 msgid "Pee"
