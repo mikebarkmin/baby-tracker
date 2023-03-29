@@ -9,7 +9,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Publish to Registry
-      uses: elgohr/Publish-Docker-Github-Action@1.10
+      uses: elgohr/Publish-Docker-Github-Action@v5
       with:
         name: mikebarkmin/baby-tracker
         username: ${{ secrets.DOCKER_USERNAME }}
